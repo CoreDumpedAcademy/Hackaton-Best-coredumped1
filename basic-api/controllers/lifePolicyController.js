@@ -1,4 +1,4 @@
-const LifePolicyUser = require('../models/lifePolicy');
+const LifePolicyUser = require('../models/lifePolicyModel');
 
 // Create and save a new user
 function signUp(req, res) {
