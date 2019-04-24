@@ -13,4 +13,4 @@ const lifePolicySchema = new Schema({
   hereditaryDiseases: { type: String, default: 'none', required: true },
 });
 
-module.exports = mongoose.model('LifePolicy', lifePolicySchema);
+module.exports = mongoose.model('LifePolicyUser', lifePolicySchema);
