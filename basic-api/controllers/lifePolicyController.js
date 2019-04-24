@@ -22,7 +22,7 @@ function signUp(req, res) {
     if (err) return res.status(500).send({ message: `Error finding user ${err}` });
     if (userExist) return res.status(409).send({ message: 'User already exist' });
 
-    console.log('lkajsdlf');
+
     const lifePolicyUser = new LifePolicyUser({
       email,
       firstname,
@@ -39,6 +39,7 @@ function signUp(req, res) {
       hereditaryDiseases,
     });
 
+    console.log(lifePolicyUser);
     // Save the new user
     lifePolicyUser.save((error, newUser) => {
       if (error) return res.status(500).send({ message: `Error saving user ${error}` });
