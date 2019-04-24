@@ -1,8 +1,7 @@
 const bodyParser = require('body-parser');
 const express = require('express');
-const userRoutes = require('./routes/userRoutes');
 const lifePolicyRoutes = require('./routes/lifePolicyRoutes');
-
+const DeceasesPolicyRoutes = require('./routes/deceasePolicyRoutes');
 const app = express();
 
 

@@ -13,12 +13,12 @@ function createLifeDecease(req, res, next){
 		if(user){
 			return res.status(500).send("Este usuario ya esta registrado");
 		}else{
-			newPolicy.save((err) => {
+			newPolicy.save((err, policy) => {
 				if(err){
 					res.status(500).send("Error: " + err);
 					return next(err);
 				}else{
-					return res.status(200).send("Todo Ok");
+					return res.status(200).send(policy);
 				}
 			});
 		}
