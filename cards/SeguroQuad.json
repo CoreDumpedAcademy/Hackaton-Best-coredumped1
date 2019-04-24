@@ -1,0 +1,58 @@
+{
+	"type": "AdaptiveCard",
+	"version": "1.0",
+	"body": [
+        {
+            "type": "TextBlock",
+            "text": "Este seguro incluye:",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Daños al casco hasta 230 euros.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Reposición de la chaqueta Airbag hasta 500 euros.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Copago.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Conducción Segura.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Kit Motorista (Daños al casco hasta 500 euros).",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Kit ayuda (Indemnización de 40 euros por hospitalizacion).",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Elección de capitales.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "Image",
+            "url": "https://cdn.pixabay.com/photo/2019/02/16/11/28/beach-buggy-4000123_960_720.png"
+        }
+	]
+}

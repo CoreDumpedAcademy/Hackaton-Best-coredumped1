@@ -3,13 +3,13 @@ const LifePolicyUser = require('../models/lifePolicy');
 
 // Create and save a new user
 function signUp(req, res) {
-  const { email } = req.body.user;
-  const { firstname } = req.body.user;
-  const { surname } = req.body.user;
-  const { age } = req.body.user;
-  const { phone } = req.body.user;
-  const { street } = req.body.user;
-  const { zipCode } = req.body.user;
+  const { email } = req.body;
+  const { firstname } = req.body;
+  const { surname } = req.body;
+  const { age } = req.body;
+  const { phone } = req.body;
+  const { street } = req.body;
+  const { zipCode } = req.body;
   const { documentIdentifier } = req.body;
   const { familySize } = req.body;
   const { familyBook } = req.body;
@@ -21,6 +21,7 @@ function signUp(req, res) {
   LifePolicyUser.findOne({ documentIdentifier }, (err, userExist) => {
     if (err) return res.status(500).send({ message: `Error finding user ${err}` });
     if (userExist) return res.status(409).send({ message: 'User already exist' });
+
 
     const lifePolicyUser = new LifePolicyUser({
       email,
@@ -38,6 +39,7 @@ function signUp(req, res) {
       hereditaryDiseases,
     });
 
+    console.log(lifePolicyUser);
     // Save the new user
     lifePolicyUser.save((error, newUser) => {
       if (error) return res.status(500).send({ message: `Error saving user ${error}` });
@@ -52,13 +54,13 @@ function signUp(req, res) {
 
 // Update the user information
 function updateLifePolicyUser(req, res) {
-  const { email } = req.body.user;
-  const { firstname } = req.body.user;
-  const { surname } = req.body.user;
-  const { phone } = req.body.user;
-  const { age } = req.body.user;
-  const { street } = req.body.user;
-  const { zipCode } = req.body.user;
+  const { email } = req.body;
+  const { firstname } = req.body;
+  const { surname } = req.body;
+  const { phone } = req.body;
+  const { age } = req.body;
+  const { street } = req.body;
+  const { zipCode } = req.body;
   const { documentIdentifier } = req.body;
   const { familySize } = req.body;
   const { familyBook } = req.body;
@@ -69,13 +71,13 @@ function updateLifePolicyUser(req, res) {
 
 
   // Get the new information
-  if (email) updatedFields.email = req.body.user.email;
-  if (firstname) updatedFields.firstname = req.body.user.firstname;
-  if (surname) updatedFields.surname = req.body.user.surname;
-  if (phone) updatedFields.phone = req.body.user.phone;
-  if (age) updatedFields.phone = req.body.user.phone;
-  if (street) updatedFields.phone = req.body.user.phone;
-  if (zipCode) updatedFields.phone = req.body.user.phone;
+  if (email) updatedFields.email = req.body.email;
+  if (firstname) updatedFields.firstname = req.body.firstname;
+  if (surname) updatedFields.surname = req.body.surname;
+  if (phone) updatedFields.phone = req.body.phone;
+  if (age) updatedFields.phone = req.body.phone;
+  if (street) updatedFields.phone = req.body.phone;
+  if (zipCode) updatedFields.phone = req.body.phone;
   if (documentIdentifier) updatedFields.documentIdentifier = req.body.documentIdentifier;
   if (familySize) updatedFields.familySize = req.body.familySize;
   if (familyBook) updatedFields.familyBook = req.body.familyBook;
