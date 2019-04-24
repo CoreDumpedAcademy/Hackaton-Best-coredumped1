@@ -4,7 +4,6 @@ const User = require('./user');
 const { Schema } = mongoose;
 
 const lifePolicySchema = new Schema({
-  user: { type: User, required: true },
   documentIdentifier: { type: String, required: true },
   familySize: { type: Number, required: true },
   familyBook: { type: String, required: true },

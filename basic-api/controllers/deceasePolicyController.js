@@ -1,11 +1,11 @@
-const LifeDecease = require('../models/lifeDeceaseModel');
+const LifeDecease = require('../models/deceasePolicyModel');
 
 function createLifeDecease(req, res, next){
 	const lifeDecease = req.body;
 	const dni = req.body.documentIdentifier;
 	const newPolicy = new LifeDecease(lifeDecease);
 	let finded = true;
-	LifeDecease.finOne({documentIdentifier:dni}, (err, user) =>{
+	LifeDecease.findOne({documentIdentifier:dni}, (err, user) =>{
 		if(err){
 			res.status.send('Error: ' + err);
 			return next(err);
@@ -42,14 +42,15 @@ function getLifeDecease(req, res){
 
 function updateLifeDecease(req, res){
 	const dni = req.body.documentIdentifier;
+	const newPolicy = req.body;
 	if(dni != null){
-		LifeDecease.findOneAndUpdate({documentIdentifier: dni}, {$set:{req.body}}, (err) => {
+		LifeDecease.findOneAndUpdate({documentIdentifier: dni}, {$set:{newPolicy}}, (err) => {
 			if(err){
 				res.status(500).send("Error: " + err);
 			}else{
 				res.status(200).send("Policy Updated");
 			}
-		}
+		});
 	}
 }
 function deleteLifeDecease(req, res, next){
@@ -66,4 +67,10 @@ function deleteLifeDecease(req, res, next){
 	}
 }
 
+module.exports = {
+	getLifeDecease,
+createLifeDecease,
+updateLifeDecease,
+deleteLifeDecease,
 
+}
