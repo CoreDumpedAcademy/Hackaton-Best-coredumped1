@@ -1,13 +1,13 @@
 const bodyParser = require('body-parser');
 const express = require('express');
-const userRoutes = require('./routes/lifePolicyRoutes');
+const lifePolicyRoutes = require('./routes/lifePolicyRoutes');
 
 const app = express();
 
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use('/lifePolicyRoutes', userRoutes);
+app.use('/lifePolicy', lifePolicyRoutes);
 
 
 module.exports = app;

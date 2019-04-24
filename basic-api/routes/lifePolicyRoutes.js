@@ -9,9 +9,9 @@ api.use((req, res, next) => {
   next();
 });
 
-api.post('/lifePolicy/signup', lifePolicyController.signUp);
-api.put('/lifePolicy/update/:documentIdentifier', lifePolicyController.updateLifePolicyUser);
-api.get('/lifePolicy/:documentIdentifier', lifePolicyController.getLifePolictUser);
+api.post('/signup', lifePolicyController.signUp);
+api.put('/update/:documentIdentifier', lifePolicyController.updateLifePolicyUser);
+api.get('/:documentIdentifier', lifePolicyController.getLifePolictUser);
 
 
 module.exports = api;
