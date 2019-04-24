@@ -1,0 +1,64 @@
+{
+	"type": "AdaptiveCard",
+	"version": "1.0",
+	"body": [
+        {
+            "type": "TextBlock",
+            "text": "Este seguro incluye:",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Responsabilidad Civil.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Seguro del Conductor 15.000 euros.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Asistencia en Carretera y Grúa Estándar en España.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Servicio de Reparación FlexiRapid.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Defensa Legal y Reclamación de Daños.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Rotura de Lunas.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Incendio de Coche.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Robo de Coche y  Daños Propios.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "Image",
+            "url": "https://cdn.pixabay.com/photo/2012/05/29/00/43/car-49278_960_720.jpg"
+        }
+	]
+}

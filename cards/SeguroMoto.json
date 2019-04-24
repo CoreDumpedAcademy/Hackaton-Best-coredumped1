@@ -1,0 +1,46 @@
+{
+	"type": "AdaptiveCard",
+	"version": "1.0",
+	"body": [
+        {
+            "type": "TextBlock",
+            "text": "Este seguro incluye:",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Responsabilidad Civil.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Responsabilidad Obligatoria y Voluntaria.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Protección jurídica.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Seguro de accidentes del conductor.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Asistencia en viaje desde el km “0”.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "Image",
+            "url": "https://cdn.pixabay.com/photo/2014/12/16/03/37/motor-cycle-569865_960_720.jpg"
+        }
+	]
+}

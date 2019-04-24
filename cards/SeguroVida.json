@@ -1,0 +1,35 @@
+{
+	"type": "AdaptiveCard",
+	"version": "1.0",
+	"body": [
+        {
+            "type": "TextBlock",
+            "text": "Este seguro incluye:",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Fallecimiento por cualquier cosa.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Incapacidad permanente.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Enfermedades graves.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "Image",
+            "url": "https://cdn.pixabay.com/photo/2014/10/06/17/30/child-476507_960_720.jpg"
+        }
+
+	]
+}

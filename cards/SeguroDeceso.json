@@ -1,0 +1,65 @@
+{
+	"type": "AdaptiveCard",
+	"version": "1.0",
+	"body": [
+        {
+            "type": "TextBlock",
+            "text": "Este seguro incluye:",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Prestación del servicio funerario.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Traslado a cualquier cementerio del territorio nacional.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Repatriación de residentes extranjeros.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Asistencia familiar.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Servicio de testamento online.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Asistencia psicológica.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Asistencia jurídica.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "   - Asistencia mundial.",
+            "size": "medium",
+            "wrap": "true"
+        },
+        {
+            "type": "Image",
+            "url": "https://cdn.pixabay.com/photo/2018/04/16/16/16/sunset-3325080_960_720.jpg"
+        }
+
+	]
+}
