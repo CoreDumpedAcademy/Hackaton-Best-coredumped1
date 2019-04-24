@@ -11,7 +11,8 @@ api.use((req, res, next) => {
 
 api.post('/signup', lifePolicyController.signUp);
 api.put('/update/:documentIdentifier', lifePolicyController.updateLifePolicyUser);
-api.get('/:documentIdentifier', lifePolicyController.getLifePolictUser);
+api.get('/:documentIdentifier', lifePolicyController.getLifePolicyUser);
+api.delete('/delete/:documentIdentifier', lifePolicyController.deleteLifePolicyUser);
 
 
 module.exports = api;
