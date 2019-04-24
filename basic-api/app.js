@@ -1,5 +1,6 @@
 const bodyParser = require('body-parser');
 const express = require('express');
+
 const lifePolicyRoutes = require('./routes/lifePolicyRoutes');
 
 const app = express();
