@@ -50,7 +50,7 @@ class Mybot {
   }
 }
 
-module.exports = Mybot;
+
 
 function say(message) {
   // eslint-disable-next-line no-console
@@ -71,6 +71,7 @@ function say(message) {
       process.exit();
     } else {
       const result = await nlpManager.process(line);
+      console.log(result.utterance);
       const answer =
         result.score > threshold && result.answer
           ? result.answer
@@ -85,3 +86,5 @@ function say(message) {
     }
   });
 })();
+
+module.exports = Mybot;

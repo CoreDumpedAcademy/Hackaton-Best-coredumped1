@@ -1,5 +1,5 @@
 const express = require('express');
-const lifePolicyController = require('../controllers/testController');
+const testController = require('../controllers/testController');
 
 const api = express.Router();
 
@@ -9,6 +9,7 @@ api.use((req, res, next) => {
   next();
 });
 
-api.post('/', lifePolicyController.test);
+api.post('/', testController.postTest);
+api.get('/', testController.getTest);
 
 module.exports = api;

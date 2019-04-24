@@ -1,1 +1,3407 @@
-{"settings":{"languages":["en","es"]},"nluManager":{"settings":{},"languages":["en","es"],"intentDomains":{},"domainManagers":{"en":{"settings":{"language":"en"},"language":"en","nluClassName":"BrainNLU","useMasterDomain":true,"trainByDomain":true,"keepStopwords":true,"stemDict":{},"intentDict":{},"useStemDict":true,"domains":{"master_domain":{"settings":{"language":"en"},"language":"en","keepStopwords":true,"docs":[],"features":{},"isEditing":false,"className":"BrainNLU","classifier":{"className":"BrainClassifier","settings":{"config":{"activation":"leaky-relu","hiddenLayers":[],"iterations":20000,"learningRate":0.4,"errorThresh":0.00005,"momentum":0.5,"deltaErrorThresh":1e-7,"maxDecimals":9,"timeout":120000}},"labels":[],"network":{"layers":[],"trainOpts":{"iterations":20000,"errorThresh":0.00005,"deltaErrorThresh":1e-7,"learningRate":0.4,"momentum":0.5,"leakyReluAlpha":0.05,"maxDecimals":9}}}}}},"es":{"settings":{"language":"es"},"language":"es","nluClassName":"BrainNLU","useMasterDomain":true,"trainByDomain":true,"keepStopwords":true,"stemDict":{"de,hac,hol,poliz,quier,una,vid":{"domain":"default","intent":"agent.askpolizavida"},"de,gustari,me,poliz,una,vid":{"domain":"default","intent":"agent.askpolizavida"},"de,poliz,quier,una,vid":{"domain":"default","intent":"agent.askpolizavida"},"de,quier,segur,un,vid":{"domain":"default","intent":"agent.askpolizavida"},"es,hol,mi,nombr,nombr":{"domain":"default","intent":"agent.asknombre"},"llam,me,nombr":{"domain":"default","intent":"agent.asknombre"},"nombr,soy":{"domain":"default","intent":"agent.asknombre"},"apell,apell,me":{"domain":"default","intent":"agent.askapellidos"},"apell,apell,mis,son":{"domain":"default","intent":"agent.askapellidos"},"direccion":{"domain":"default","intent":"agent.askdireccion"},"direccion,en,viv":{"domain":"default","intent":"agent.askdireccion"},"direccion,direccion,es,mi":{"domain":"default","intent":"agent.askdireccion"},"anos,edad,teng":{"domain":"default","intent":"agent.askedad"},"dni,dni,es,mi":{"domain":"default","intent":"agent.askdni"},"de,es,mi,numer,telefon,telefon":{"domain":"default","intent":"agent.asktlfn"},"en,famili,hay,mi,miembr":{"domain":"default","intent":"agent.askmiembros"},"en,famili,hay,mi,miembr,miembr":{"domain":"default","intent":"agent.askmiembros"},"beneficiari,beneficiari,el,es":{"domain":"default","intent":"agent.askbeneficiario"},"es,fich,medic,mi":{"domain":"default","intent":"agent.askficha"},"si":{"domain":"default","intent":"enfermedadYES.askenfermedad"},"enfermed,enfermed,es,la":{"domain":"default","intent":"enfermedadYES.enfermedadRecibida"},"inclu,la,poliz,que":{"domain":"default","intent":"enfermedadYES.enfermedadRecibida"},"el,inclu,que,segur":{"domain":"default","intent":"enfermedadYES.enfermedadRecibida"}},"intentDict":{"agent.askpolizavida":"default","agent.asknombre":"default","agent.askapellidos":"default","agent.askdireccion":"default","agent.askedad":"default","agent.askdni":"default","agent.asktlfn":"default","agent.askmiembros":"default","agent.askbeneficiario":"default","agent.askficha":"default","enfermedadYES.askenfermedad":"default","enfermedadYES.enfermedadRecibida":"default"},"useStemDict":true,"domains":{"master_domain":{"settings":{"language":"es"},"language":"es","keepStopwords":true,"docs":[{"intent":"default","utterance":["hol","quier","hac","una","poliz","de","vid"],"tokens":["hol","quier","hac","una","poliz","de","vid"]},{"intent":"default","utterance":["me","gustari","una","poliz","de","vid"],"tokens":["me","gustari","una","poliz","de","vid"]},{"intent":"default","utterance":["quier","una","poliz","de","vid"],"tokens":["quier","una","poliz","de","vid"]},{"intent":"default","utterance":["quier","un","segur","de","vid"],"tokens":["quier","un","segur","de","vid"]},{"intent":"default","utterance":["hol","mi","nombr","es","nombr"],"tokens":["hol","mi","nombr","es","nombr"]},{"intent":"default","utterance":["me","llam","nombr"],"tokens":["me","llam","nombr"]},{"intent":"default","utterance":["soy","nombr"],"tokens":["soy","nombr"]},{"intent":"default","utterance":["me","apell","apell"],"tokens":["me","apell","apell"]},{"intent":"default","utterance":["mis","apell","son","apell"],"tokens":["mis","apell","son","apell"]},{"intent":"default","utterance":["direccion"],"tokens":["direccion"]},{"intent":"default","utterance":["viv","en","direccion"],"tokens":["viv","en","direccion"]},{"intent":"default","utterance":["mi","direccion","es","direccion"],"tokens":["mi","direccion","es","direccion"]},{"intent":"default","utterance":["teng","edad","anos"],"tokens":["teng","edad","anos"]},{"intent":"default","utterance":["mi","dni","es","dni"],"tokens":["mi","dni","es","dni"]},{"intent":"default","utterance":["mi","numer","de","telefon","es","telefon"],"tokens":["mi","numer","de","telefon","es","telefon"]},{"intent":"default","utterance":["hay","miembr","en","mi","famili"],"tokens":["hay","miembr","en","mi","famili"]},{"intent":"default","utterance":["en","mi","famili","hay","miembr","miembr"],"tokens":["en","mi","famili","hay","miembr","miembr"]},{"intent":"default","utterance":["el","beneficiari","es","beneficiari"],"tokens":["el","beneficiari","es","beneficiari"]},{"intent":"default","utterance":["mi","fich","medic","es"],"tokens":["mi","fich","medic","es"]},{"intent":"default","utterance":["si"],"tokens":["si"]},{"intent":"default","utterance":["la","enfermed","es","enfermed"],"tokens":["la","enfermed","es","enfermed"]},{"intent":"default","utterance":["que","inclu","la","poliz"],"tokens":["que","inclu","la","poliz"]},{"intent":"default","utterance":["que","inclu","el","segur"],"tokens":["que","inclu","el","segur"]}],"features":{"hol":2,"quier":3,"hac":1,"una":3,"poliz":4,"de":5,"vid":4,"me":3,"gustari":1,"un":1,"segur":2,"mi":7,"nombr":4,"es":7,"llam":1,"soy":1,"apell":4,"mis":1,"son":1,"direccion":4,"viv":1,"en":3,"teng":1,"edad":1,"anos":1,"dni":2,"numer":1,"telefon":2,"hay":2,"miembr":3,"famili":2,"el":2,"beneficiari":2,"fich":1,"medic":1,"si":1,"la":2,"enfermed":2,"que":2,"inclu":2},"isEditing":false,"className":"BrainNLU","classifier":{"className":"BrainClassifier","settings":{"config":{"activation":"leaky-relu","hiddenLayers":[],"iterations":20000,"learningRate":0.4,"errorThresh":0.00005,"momentum":0.5,"deltaErrorThresh":1e-7,"maxDecimals":9,"timeout":120000}},"labels":[],"network":{"sizes":[40,1],"layers":[{"hol":{},"quier":{},"hac":{},"una":{},"poliz":{},"de":{},"vid":{},"me":{},"gustari":{},"un":{},"segur":{},"mi":{},"nombr":{},"es":{},"llam":{},"soy":{},"apell":{},"mis":{},"son":{},"direccion":{},"viv":{},"en":{},"teng":{},"edad":{},"anos":{},"dni":{},"numer":{},"telefon":{},"hay":{},"miembr":{},"famili":{},"el":{},"beneficiari":{},"fich":{},"medic":{},"si":{},"la":{},"enfermed":{},"que":{},"inclu":{}},{"default":{"bias":15.159013748,"weights":{"hol":0.725352228,"quier":1.177705884,"hac":-0.569298565,"una":0.309336305,"poliz":0.825514317,"de":1.782527089,"vid":0.681342959,"me":1.740815043,"gustari":-0.496368438,"un":0.372011244,"segur":0.843376875,"mi":-0.413057119,"nombr":3.120447397,"es":1.24823916,"llam":0.020531081,"soy":1.805261731,"apell":3.097851753,"mis":0.88119334,"son":0.88119334,"direccion":4.374146938,"viv":-0.468036234,"en":0.961684287,"teng":1.619761944,"edad":1.619761944,"anos":1.619761944,"dni":3.930000782,"numer":1.101174474,"telefon":1.101174474,"hay":1.429721832,"miembr":1.429721832,"famili":1.429721832,"el":2.028937101,"beneficiari":1.557534099,"fich":1.985940337,"medic":1.985940337,"si":4.899459362,"la":2.049690008,"enfermed":1.533463836,"que":0.987553716,"inclu":0.987553716}}}],"trainOpts":{"iterations":20000,"errorThresh":0.00005,"deltaErrorThresh":1e-7,"learningRate":0.4,"momentum":0.5,"leakyReluAlpha":0.05,"maxDecimals":9}}}},"default":{"settings":{"language":"es"},"language":"es","keepStopwords":true,"docs":[{"intent":"agent.askpolizavida","utterance":["hol","quier","hac","una","poliz","de","vid"],"tokens":["hol","quier","hac","una","poliz","de","vid"]},{"intent":"agent.askpolizavida","utterance":["me","gustari","una","poliz","de","vid"],"tokens":["me","gustari","una","poliz","de","vid"]},{"intent":"agent.askpolizavida","utterance":["quier","una","poliz","de","vid"],"tokens":["quier","una","poliz","de","vid"]},{"intent":"agent.askpolizavida","utterance":["quier","un","segur","de","vid"],"tokens":["quier","un","segur","de","vid"]},{"intent":"agent.asknombre","utterance":["hol","mi","nombr","es","nombr"],"tokens":["hol","mi","nombr","es","nombr"]},{"intent":"agent.asknombre","utterance":["me","llam","nombr"],"tokens":["me","llam","nombr"]},{"intent":"agent.asknombre","utterance":["soy","nombr"],"tokens":["soy","nombr"]},{"intent":"agent.askapellidos","utterance":["me","apell","apell"],"tokens":["me","apell","apell"]},{"intent":"agent.askapellidos","utterance":["mis","apell","son","apell"],"tokens":["mis","apell","son","apell"]},{"intent":"agent.askdireccion","utterance":["direccion"],"tokens":["direccion"]},{"intent":"agent.askdireccion","utterance":["viv","en","direccion"],"tokens":["viv","en","direccion"]},{"intent":"agent.askdireccion","utterance":["mi","direccion","es","direccion"],"tokens":["mi","direccion","es","direccion"]},{"intent":"agent.askedad","utterance":["teng","edad","anos"],"tokens":["teng","edad","anos"]},{"intent":"agent.askdni","utterance":["mi","dni","es","dni"],"tokens":["mi","dni","es","dni"]},{"intent":"agent.asktlfn","utterance":["mi","numer","de","telefon","es","telefon"],"tokens":["mi","numer","de","telefon","es","telefon"]},{"intent":"agent.askmiembros","utterance":["hay","miembr","en","mi","famili"],"tokens":["hay","miembr","en","mi","famili"]},{"intent":"agent.askmiembros","utterance":["en","mi","famili","hay","miembr","miembr"],"tokens":["en","mi","famili","hay","miembr","miembr"]},{"intent":"agent.askbeneficiario","utterance":["el","beneficiari","es","beneficiari"],"tokens":["el","beneficiari","es","beneficiari"]},{"intent":"agent.askficha","utterance":["mi","fich","medic","es"],"tokens":["mi","fich","medic","es"]},{"intent":"enfermedadYES.askenfermedad","utterance":["si"],"tokens":["si"]},{"intent":"enfermedadYES.enfermedadRecibida","utterance":["la","enfermed","es","enfermed"],"tokens":["la","enfermed","es","enfermed"]},{"intent":"enfermedadYES.enfermedadRecibida","utterance":["que","inclu","la","poliz"],"tokens":["que","inclu","la","poliz"]},{"intent":"enfermedadYES.enfermedadRecibida","utterance":["que","inclu","el","segur"],"tokens":["que","inclu","el","segur"]}],"features":{"hol":2,"quier":3,"hac":1,"una":3,"poliz":4,"de":5,"vid":4,"me":3,"gustari":1,"un":1,"segur":2,"mi":7,"nombr":4,"es":7,"llam":1,"soy":1,"apell":4,"mis":1,"son":1,"direccion":4,"viv":1,"en":3,"teng":1,"edad":1,"anos":1,"dni":2,"numer":1,"telefon":2,"hay":2,"miembr":3,"famili":2,"el":2,"beneficiari":2,"fich":1,"medic":1,"si":1,"la":2,"enfermed":2,"que":2,"inclu":2},"isEditing":false,"className":"BrainNLU","classifier":{"className":"BrainClassifier","settings":{"config":{"activation":"leaky-relu","hiddenLayers":[],"iterations":20000,"learningRate":0.4,"errorThresh":0.00005,"momentum":0.5,"deltaErrorThresh":1e-7,"maxDecimals":9,"timeout":120000}},"labels":[],"network":{"sizes":[40,12],"layers":[{"hol":{},"quier":{},"hac":{},"una":{},"poliz":{},"de":{},"vid":{},"me":{},"gustari":{},"un":{},"segur":{},"mi":{},"nombr":{},"es":{},"llam":{},"soy":{},"apell":{},"mis":{},"son":{},"direccion":{},"viv":{},"en":{},"teng":{},"edad":{},"anos":{},"dni":{},"numer":{},"telefon":{},"hay":{},"miembr":{},"famili":{},"el":{},"beneficiari":{},"fich":{},"medic":{},"si":{},"la":{},"enfermed":{},"que":{},"inclu":{}},{"agent.askpolizavida":{"bias":0.287102371,"weights":{"hol":-0.126436353,"quier":3.538501263,"hac":-0.021473102,"una":3.116437674,"poliz":2.353625774,"de":4.841742039,"vid":5.973058224,"me":0.922859669,"gustari":2.434563398,"un":2.856630087,"segur":2.46642828,"mi":-1.42691493,"nombr":-0.745227575,"es":-1.43948257,"llam":-0.488070428,"soy":-0.152194321,"apell":-1.164336681,"mis":-0.140700474,"son":-0.140700474,"direccion":-0.440469384,"viv":-0.139122367,"en":-0.216967359,"teng":-0.192393318,"edad":-0.192393318,"anos":-0.192393318,"dni":-0.050588958,"numer":-1.131326556,"telefon":-1.131326556,"hay":-0.07784497,"miembr":-0.07784497,"famili":-0.07784497,"el":-0.441890866,"beneficiari":-0.051687803,"fich":-0.013278991,"medic":-0.013278991,"si":-0.339838743,"la":-0.801536322,"enfermed":-0.038724739,"que":-1.153012872,"inclu":-1.153012872}},"agent.asknombre":{"bias":1.16365695,"weights":{"hol":4.46633625,"quier":-0.655596495,"hac":-0.60887599,"una":-0.932607412,"poliz":-1.044076443,"de":-1.421735883,"vid":-0.962767661,"me":1.260223269,"gustari":-0.307171255,"un":-0.030160308,"segur":-0.215457052,"mi":0.563393295,"nombr":13.831361771,"es":-0.069003887,"llam":3.760909081,"soy":4.99524498,"apell":-2.44374609,"mis":-0.250236392,"son":-0.250236392,"direccion":-1.698757052,"viv":-0.174487665,"en":-0.643655241,"teng":-0.468217909,"edad":-0.468217909,"anos":-0.468217909,"dni":-1.621051073,"numer":-0.458969533,"telefon":-0.458969533,"hay":-0.469167888,"miembr":-0.469167888,"famili":-0.469167888,"el":-0.737960577,"beneficiari":-0.552663684,"fich":-0.849978983,"medic":-0.849978983,"si":-1.132986903,"la":-0.660371304,"enfermed":-0.5489012,"que":-0.296766877,"inclu":-0.296766877}},"agent.askapellidos":{"bias":1.483884215,"weights":{"hol":-0.065202333,"quier":-0.13863197,"hac":-0.046053264,"una":-1.285786271,"poliz":-1.430445671,"de":-1.412970781,"vid":-1.350473762,"me":5.271045208,"gustari":-1.21184206,"un":-0.064687662,"segur":-0.337923378,"mi":-0.66724354,"nombr":-3.380265236,"es":-0.987718701,"llam":-3.11264348,"soy":-0.248473182,"apell":12.653956413,"mis":3.058452368,"son":3.058452368,"direccion":-1.470132232,"viv":-0.289544106,"en":-0.502322972,"teng":-0.550385237,"edad":-0.550385237,"anos":-0.550385237,"dni":-0.17282334,"numer":-0.06249702,"telefon":-0.06249702,"hay":-0.212778673,"miembr":-0.212778673,"famili":-0.212778673,"el":-0.530132532,"beneficiari":-0.256896585,"fich":-0.108704649,"medic":-0.108704649,"si":-1.426847577,"la":-0.421016604,"enfermed":-0.276357174,"que":-0.417895138,"inclu":-0.417895138}},"agent.askdireccion":{"bias":1.926845789,"weights":{"hol":-0.985312879,"quier":-0.229115278,"hac":-0.041541886,"una":-0.156434938,"poliz":-0.34790498,"de":-1.06230104,"vid":-0.278409988,"me":-0.852169871,"gustari":-0.049294811,"un":-0.121975198,"segur":-0.301290601,"mi":0.547463894,"nombr":-1.589689016,"es":0.097838081,"llam":-0.203180522,"soy":-0.442738652,"apell":-1.05503726,"mis":-0.455343813,"son":-0.455343813,"direccion":17.331148148,"viv":1.261070728,"en":-0.137390152,"teng":-0.647085726,"edad":-0.647085726,"anos":-0.647085726,"dni":-2.448129177,"numer":-0.783890963,"telefon":-0.783890963,"hay":-1.398457646,"miembr":-1.398457646,"famili":-1.398457646,"el":-1.111089706,"beneficiari":-0.931775033,"fich":-1.292440414,"medic":-1.292440414,"si":-1.765042424,"la":-1.107775211,"enfermed":-0.916306496,"que":-0.370785356,"inclu":-0.370785356}},"agent.askedad":{"bias":0.987296343,"weights":{"hol":-0.057773583,"quier":-0.21237044,"hac":-0.040344086,"una":-0.135710821,"poliz":-0.272099137,"de":-0.295655817,"vid":-0.248574793,"me":-0.506295025,"gustari":-0.036204349,"un":-0.11286395,"segur":-0.25573352,"mi":-0.417933106,"nombr":-0.617177665,"es":-0.628118575,"llam":-0.177147567,"soy":-0.422600895,"apell":-0.563526034,"mis":-0.270583093,"son":-0.270583093,"direccion":-0.956458569,"viv":-0.175554737,"en":-0.319990546,"teng":6.33080864,"edad":6.33080864,"anos":6.33080864,"dni":-0.122907124,"numer":-0.047081146,"telefon":-0.047081146,"hay":-0.144435853,"miembr":-0.144435853,"famili":-0.144435853,"el":-0.323707074,"beneficiari":-0.180837527,"fich":-0.075787693,"medic":-0.075787693,"si":-0.946288228,"la":-0.310171992,"enfermed":-0.173783675,"que":-0.279257864,"inclu":-0.279257864}},"agent.askdni":{"bias":0.219813332,"weights":{"hol":-2.377882719,"quier":-0.024418194,"hac":-0.007775094,"una":-0.024162782,"poliz":-0.045957703,"de":-1.632310271,"vid":-0.033137757,"me":-0.092679173,"gustari":-0.008719565,"un":-0.008974977,"segur":-0.02621004,"mi":2.91045475,"nombr":-2.396137953,"es":1.751610518,"llam":-0.013050563,"soy":-0.012979906,"apell":-0.124194771,"mis":-0.053285696,"son":-0.053285696,"direccion":-4.2353549,"viv":-0.004629497,"en":-0.785506189,"teng":-0.066555984,"edad":-0.066555984,"anos":-0.066555984,"dni":14.274526596,"numer":-1.599172473,"telefon":-1.599172473,"hay":-0.780876756,"miembr":-0.780876756,"famili":-0.780876756,"el":-0.991609991,"beneficiari":-0.974375069,"fich":-2.405284405,"medic":-2.405284405,"si":-0.215216577,"la":-0.98714,"enfermed":-0.965345025,"que":-0.039029986,"inclu":-0.039029986}},"agent.asktlfn":{"bias":-0.60996598,"weights":{"hol":-1.010730863,"quier":-1.177277088,"hac":-0.132026121,"una":-0.881322324,"poliz":-0.893493414,"de":5.014288425,"vid":-1.656370878,"me":-0.491028488,"gustari":-0.479092628,"un":-0.775047839,"segur":-0.787982523,"mi":1.314291239,"nombr":-0.889183164,"es":0.90743494,"llam":-0.004206603,"soy":-0.006271593,"apell":-0.023318172,"mis":-0.015588922,"son":-0.015588922,"direccion":-1.599314451,"viv":-0.003354968,"en":-0.346375018,"teng":-0.011527688,"edad":-0.011527688,"anos":-0.011527688,"dni":-1.577035785,"numer":6.670646191,"telefon":6.670646191,"hay":-0.343020052,"miembr":-0.343020052,"famili":-0.343020052,"el":-0.399276316,"beneficiari":-0.386341602,"fich":-0.972079515,"medic":-0.972079515,"si":-0.043751061,"la":-0.375706017,"enfermed":-0.363534927,"que":-0.025105802,"inclu":-0.025105802}},"agent.askmiembros":{"bias":0.086450115,"weights":{"hol":-0.421765953,"quier":-0.096355103,"hac":-0.028917229,"una":-0.090585746,"poliz":-0.160271317,"de":-0.390947461,"vid":-0.12882185,"me":-0.180318892,"gustari":-0.032466758,"un":-0.038236104,"segur":-0.110420637,"mi":2.654785633,"nombr":-0.507616878,"es":-2.101799488,"llam":-0.050713677,"soy":-0.064054579,"apell":-0.194246024,"mis":-0.097107537,"son":-0.097107537,"direccion":-1.816251159,"viv":-1.475757003,"en":3.20777297,"teng":-0.099611104,"edad":-0.099611104,"anos":-0.099611104,"dni":-0.638279319,"numer":-0.262125641,"telefon":-0.262125641,"hay":4.683526039,"miembr":4.683526039,"famili":4.683526039,"el":-0.115688995,"beneficiari":-0.043504477,"fich":-0.448600829,"medic":-0.448600829,"si":-0.200151488,"la":-0.099240959,"enfermed":-0.029555393,"que":-0.141870081,"inclu":-0.141870081}},"agent.askbeneficiario":{"bias":0.27912122,"weights":{"hol":-0.507860184,"quier":-0.056633439,"hac":-0.018827079,"una":-0.065375432,"poliz":-0.088812992,"de":-0.403987169,"vid":-0.079156995,"me":-0.176408604,"gustari":-0.022523567,"un":-0.01378157,"segur":-2.311005354,"mi":-3.154639244,"nombr":-0.581356525,"es":3.84625864,"llam":-0.038425528,"soy":-0.053898025,"apell":-0.218221247,"mis":-0.102761686,"son":-0.102761686,"direccion":-0.960654497,"viv":-0.047587674,"en":-0.050591182,"teng":-0.126149058,"edad":-0.126149058,"anos":-0.126149058,"dni":-0.938073218,"numer":-0.324830174,"telefon":-0.324830174,"hay":-0.003003507,"miembr":-0.003003507,"famili":-0.003003507,"el":6.723659992,"beneficiari":9.020859718,"fich":-0.556248844,"medic":-0.556248844,"si":-0.32993558,"la":-2.046420574,"enfermed":-2.022983313,"que":-2.320661306,"inclu":-2.320661306}},"agent.askficha":{"bias":-0.002454081,"weights":{"hol":-1.320158243,"quier":-0.04944592,"hac":-0.015306732,"una":-0.048276201,"poliz":-0.076639444,"de":-0.906705022,"vid":-0.06713143,"me":-0.093106061,"gustari":-0.017685514,"un":-0.018855231,"segur":-0.056758054,"mi":1.524876833,"nombr":-1.341492772,"es":0.909996927,"llam":-0.017893517,"soy":-0.01874771,"apell":-0.112256676,"mis":-0.054729637,"son":-0.054729637,"direccion":-2.370838642,"viv":-0.017530952,"en":-0.417027026,"teng":-0.05276271,"edad":-0.05276271,"anos":-0.05276271,"dni":-2.331173182,"numer":-0.839573622,"telefon":-0.839573622,"hay":-0.399496049,"miembr":-0.399496049,"famili":-0.399496049,"el":-0.499728709,"beneficiari":-0.461825937,"fich":8.724536896,"medic":8.724536896,"si":-0.134261817,"la":-0.580912232,"enfermed":-0.552549005,"que":-0.06626606,"inclu":-0.06626606}},"enfermedadYES.askenfermedad":{"bias":2.985238314,"weights":{"hol":-0.120155834,"quier":-0.606945217,"hac":-0.058740675,"una":-0.342704892,"poliz":-0.681123257,"de":-0.686252594,"vid":-0.660195649,"me":-1.301923156,"gustari":-0.053250521,"un":-0.317490846,"segur":-0.696916521,"mi":-1.020787001,"nombr":-1.635311604,"es":-1.609118104,"llam":-0.34908393,"soy":-1.224812746,"apell":-1.587918043,"mis":-0.688328087,"son":-0.688328087,"direccion":-2.525704861,"viv":-0.354532212,"en":-0.750161409,"teng":-0.969077051,"edad":-0.969077051,"anos":-0.969077051,"dni":-0.321864635,"numer":-0.026056953,"telefon":-0.026056953,"hay":-0.395629019,"miembr":-0.395629019,"famili":-0.395629019,"el":-0.850034118,"beneficiari":-0.470608145,"fich":-0.166658178,"medic":-0.166658178,"si":15.958251953,"la":-0.851768732,"enfermed":-0.51335001,"que":-0.717843592,"inclu":-0.717843592}},"enfermedadYES.enfermedadRecibida":{"bias":1.148380518,"weights":{"hol":-0.510974407,"quier":-1.458316326,"hac":-0.178809315,"una":-0.635913432,"poliz":-0.759237707,"de":-1.813091874,"vid":-1.692745924,"me":-0.746060669,"gustari":-0.234429583,"un":-1.056833625,"segur":4.961328983,"mi":-2.220750809,"nombr":-0.941767275,"es":1.892140269,"llam":-0.185474515,"soy":-0.424127549,"apell":-0.699041784,"mis":-0.372884959,"son":-0.372884959,"direccion":-1.241462827,"viv":-0.231952369,"en":-0.333559304,"teng":-0.456179976,"edad":-0.456179976,"anos":-0.456179976,"dni":-0.830010712,"numer":-0.120346002,"telefon":-0.120346002,"hay":-0.101606987,"miembr":-0.101606987,"famili":-0.101606987,"el":1.685172677,"beneficiari":-4.332975864,"fich":-0.424930423,"medic":-0.424930423,"si":-1.107863784,"la":8.220968246,"enfermed":8.344257355,"que":5.89481926,"inclu":5.89481926}}}],"trainOpts":{"iterations":20000,"errorThresh":0.00005,"deltaErrorThresh":1e-7,"learningRate":0.4,"momentum":0.5,"leakyReluAlpha":0.05,"maxDecimals":9}}}}}}},"extraSentences":[["es","Hola, quiero hacerme una poliza de vida"],["es","Me gustaria una poliza de vida"],["es","Quiero una poliza de vida"],["es","Quiero un seguro de vida"],["es","Hola, mi nombre es %nombre%"],["es","Me llamo %nombre%"],["es","Soy %nombre%"],["es","me apellido %apellidos%"],["es","mis apellidos son %apellidos%"],["es","%direccion%"],["es","Vivo en %direccion%"],["es","Mi dirección es %direccion%"],["es","Tengo %edad% años"],["es","Mi DNI es %dni%"],["es","Mi numero de telefono es %telefono%"],["es","Hay %miembros% en mi familia"],["es","En mi familia hay %miembros% miembros"],["es","El beneficiario es %beneficiario%"],["es","Mi ficha medica es "],["es","si"],["es","la enfermedad es %enfermedad%"],["es","¿Qué incluye la poliza?"],["es","¿Qué incluye el seguro?"]]},"nerManager":{"settings":{},"threshold":0.8,"builtins":["Number","Ordinal","Percentage","Age","Currency","Dimension","Temperature","DateTime","PhoneNumber","IpAddress","Boolean","Email","Hashtag","URL"],"namedEntities":{"nombre":{"type":"enum","name":"nombre","localeFallback":{"*":"en"},"locales":{"oscar":{"es":[null]},"luis":{"es":[null]},"alberto":{"es":[null]},"juan":{"es":[null]},"pedro":{"es":[null]},"angela":{"es":[null]}}}}},"slotManager":{"agent.asknombre":{"nombre":{"intent":"agent.asknombre","entity":"nombre","mandatory":false,"locales":{}}}},"responses":{"es":{"agent.askpolizavida":[{"response":"¡Hola! ¿Cómo te llamas?"}],"agent.asknombre":[{"response":"Hola, {{nombre}}, Por favor dime tus apellidos"}],"agent.askapellidos":[{"response":"Genial, {{nombre}} {{apellidos}} ¿Dónde vives? Por favor se lo más completo posible"}],"agent.askdireccion":[{"response":"¿Cuántos años tienes?"}],"agent.askedad":[{"response":"Introduzca su DNI por favor"}],"agent.askdni":[{"response":"¿Cuál es tu número de telefono?"}],"agent.asktlfn":[{"response":"¿Cuántos miembros hay en su familia?"}],"agent.askmiembros":[{"response":"¿Quién es el beneficiario del seguro?"}],"agent.askbeneficiario":[{"response":"Por favor introduce ficha médica."}],"agent.askfichamedica":[{"response":"¿Hay alguna enfermedad hereditaria en su familia?"}],"enfermedadYES.askenfermedad":[{"response":"¿Qué enfermedad?"}],"enfermedadYES.enfermedadRecibida":[{"response":"¡Muchas gracias! trabajaré duro para hacerte tu poliza personalmente"}],"enfermedadYES.incluye":[{"response":"Esta póliza incluye: fallecimiento por cualquier cosa, incapacidad permanente y enfermedades graves."}]}}}
+{
+  "settings": {
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "nluManager": {
+    "settings": {},
+    "languages": [
+      "en",
+      "es"
+    ],
+    "intentDomains": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "language": "en"
+        },
+        "language": "en",
+        "nluClassName": "BrainNLU",
+        "useMasterDomain": true,
+        "trainByDomain": true,
+        "keepStopwords": true,
+        "stemDict": {},
+        "intentDict": {},
+        "useStemDict": true,
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "language": "en"
+            },
+            "language": "en",
+            "keepStopwords": true,
+            "docs": [],
+            "features": {},
+            "isEditing": false,
+            "className": "BrainNLU",
+            "classifier": {
+              "className": "BrainClassifier",
+              "settings": {
+                "config": {
+                  "activation": "leaky-relu",
+                  "hiddenLayers": [],
+                  "iterations": 20000,
+                  "learningRate": 0.4,
+                  "errorThresh": 0.00005,
+                  "momentum": 0.5,
+                  "deltaErrorThresh": 1e-7,
+                  "maxDecimals": 9,
+                  "timeout": 120000
+                }
+              },
+              "labels": [],
+              "network": {
+                "layers": [],
+                "trainOpts": {
+                  "iterations": 20000,
+                  "errorThresh": 0.00005,
+                  "deltaErrorThresh": 1e-7,
+                  "learningRate": 0.4,
+                  "momentum": 0.5,
+                  "leakyReluAlpha": 0.05,
+                  "maxDecimals": 9
+                }
+              }
+            }
+          }
+        }
+      },
+      "es": {
+        "settings": {
+          "language": "es"
+        },
+        "language": "es",
+        "nluClassName": "BrainNLU",
+        "useMasterDomain": true,
+        "trainByDomain": true,
+        "keepStopwords": true,
+        "stemDict": {
+          "hol": {
+            "domain": "default",
+            "intent": "agent.hola"
+          },
+          "de,hac,hol,poliz,quier,una,vid": {
+            "domain": "default",
+            "intent": "agent.askpolizavida"
+          },
+          "de,gustari,me,poliz,una,vid": {
+            "domain": "default",
+            "intent": "agent.askpolizavida"
+          },
+          "de,poliz,quier,una,vid": {
+            "domain": "default",
+            "intent": "agent.askpolizavida"
+          },
+          "de,quier,segur,un,vid": {
+            "domain": "default",
+            "intent": "agent.askpolizavida"
+          },
+          "de,deces,hac,poliz,quier,una": {
+            "domain": "default",
+            "intent": "agent.askpolizadecesos"
+          },
+          "de,deces,hac,quier,segur,un": {
+            "domain": "default",
+            "intent": "agent.askpolizadecesos"
+          },
+          "es,hol,mi,nombr,nombr": {
+            "domain": "default",
+            "intent": "agent.asknombre"
+          },
+          "llam,me,nombr": {
+            "domain": "default",
+            "intent": "agent.asknombre"
+          },
+          "nombr,soy": {
+            "domain": "default",
+            "intent": "agent.asknombre"
+          },
+          "apell,apell,me": {
+            "domain": "default",
+            "intent": "agent.askapellidos"
+          },
+          "apell,apell,mis,son": {
+            "domain": "default",
+            "intent": "agent.askapellidos"
+          },
+          "direccion,en,viv": {
+            "domain": "default",
+            "intent": "agent.askdireccion"
+          },
+          "direccion,direccion,es,mi": {
+            "domain": "default",
+            "intent": "agent.askdireccion"
+          },
+          "anos,edad,teng": {
+            "domain": "default",
+            "intent": "agent.askedad"
+          },
+          "dni,dni,es,mi": {
+            "domain": "default",
+            "intent": "agent.askdni"
+          },
+          "de,es,mi,numer,telefon,telefon": {
+            "domain": "default",
+            "intent": "agent.asktlfn"
+          },
+          "en,famili,hay,mi,miembr": {
+            "domain": "default",
+            "intent": "agent.askmiembros"
+          },
+          "en,famili,hay,mi,miembr,miembr": {
+            "domain": "default",
+            "intent": "agent.askmiembros"
+          },
+          "beneficiari,beneficiari,el,es": {
+            "domain": "default",
+            "intent": "agent.askbeneficiario"
+          },
+          "es,fich,fich,medic,mi": {
+            "domain": "default",
+            "intent": "agent.askficha"
+          },
+          "si": {
+            "domain": "default",
+            "intent": "enfermedadYES.askenfermedad"
+          },
+          "enfermed,enfermed,es,la": {
+            "domain": "default",
+            "intent": "enfermedadYES.enfermedadRecibida"
+          },
+          "inclu,la,poliz,que": {
+            "domain": "default",
+            "intent": "enfermedadYES.enfermedadIncluye"
+          },
+          "el,inclu,que,segur": {
+            "domain": "default",
+            "intent": "enfermedadYES.enfermedadIncluye"
+          },
+          "elimin,quier,segur,un": {
+            "domain": "default",
+            "intent": "agent.eliminarSeguro"
+          },
+          "elimin,poliz,quier,una": {
+            "domain": "default",
+            "intent": "agent.eliminarSeguro"
+          },
+          "baj,darm,de,en,quier,segur,un": {
+            "domain": "default",
+            "intent": "agent.eliminarSeguro"
+          },
+          "baj,darm,de,de,gustari,me,poliz,una": {
+            "domain": "default",
+            "intent": "agent.eliminarSeguro"
+          },
+          "baj,contrat,darm,de,de,deseari,el,segur": {
+            "domain": "default",
+            "intent": "agent.eliminarSeguro"
+          },
+          "accident,he,ten,un": {
+            "domain": "default",
+            "intent": "agent.acidente"
+          },
+          "accident,he,sufr,un": {
+            "domain": "default",
+            "intent": "agent.acidente"
+          },
+          "accident,he,provoc,un": {
+            "domain": "default",
+            "intent": "agent.acidente"
+          },
+          "he,siniestr,ten,un": {
+            "domain": "default",
+            "intent": "agent.acidente"
+          },
+          "en,estoy,localizacion": {
+            "domain": "default",
+            "intent": "agent.asklocalizacion"
+          },
+          "dond,estoy,no,se": {
+            "domain": "default",
+            "intent": "agent.asklocalizacionNo"
+          },
+          "nad,necesit,no": {
+            "domain": "default",
+            "intent": "agent.necesidadNO"
+          }
+        },
+        "intentDict": {
+          "agent.hola": "default",
+          "agent.askpolizavida": "default",
+          "agent.askpolizadecesos": "default",
+          "agent.asknombre": "default",
+          "agent.askapellidos": "default",
+          "agent.askdireccion": "default",
+          "agent.askedad": "default",
+          "agent.askdni": "default",
+          "agent.asktlfn": "default",
+          "agent.askmiembros": "default",
+          "agent.askbeneficiario": "default",
+          "agent.askficha": "default",
+          "enfermedadYES.askenfermedad": "default",
+          "enfermedadYES.enfermedadRecibida": "default",
+          "enfermedadYES.enfermedadIncluye": "default",
+          "agent.eliminarSeguro": "default",
+          "agent.acidente": "default",
+          "agent.asklocalizacion": "default",
+          "agent.asklocalizacionNo": "default",
+          "agent.necesidadNO": "default"
+        },
+        "useStemDict": true,
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "language": "es"
+            },
+            "language": "es",
+            "keepStopwords": true,
+            "docs": [
+              {
+                "intent": "default",
+                "utterance": [
+                  "hol"
+                ],
+                "tokens": [
+                  "hol"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "hol",
+                  "quier",
+                  "hac",
+                  "una",
+                  "poliz",
+                  "de",
+                  "vid"
+                ],
+                "tokens": [
+                  "hol",
+                  "quier",
+                  "hac",
+                  "una",
+                  "poliz",
+                  "de",
+                  "vid"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "me",
+                  "gustari",
+                  "una",
+                  "poliz",
+                  "de",
+                  "vid"
+                ],
+                "tokens": [
+                  "me",
+                  "gustari",
+                  "una",
+                  "poliz",
+                  "de",
+                  "vid"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "quier",
+                  "una",
+                  "poliz",
+                  "de",
+                  "vid"
+                ],
+                "tokens": [
+                  "quier",
+                  "una",
+                  "poliz",
+                  "de",
+                  "vid"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "quier",
+                  "un",
+                  "segur",
+                  "de",
+                  "vid"
+                ],
+                "tokens": [
+                  "quier",
+                  "un",
+                  "segur",
+                  "de",
+                  "vid"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "quier",
+                  "hac",
+                  "una",
+                  "poliz",
+                  "de",
+                  "deces"
+                ],
+                "tokens": [
+                  "quier",
+                  "hac",
+                  "una",
+                  "poliz",
+                  "de",
+                  "deces"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "quier",
+                  "hac",
+                  "un",
+                  "segur",
+                  "de",
+                  "deces"
+                ],
+                "tokens": [
+                  "quier",
+                  "hac",
+                  "un",
+                  "segur",
+                  "de",
+                  "deces"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "hol",
+                  "mi",
+                  "nombr",
+                  "es",
+                  "nombr"
+                ],
+                "tokens": [
+                  "hol",
+                  "mi",
+                  "nombr",
+                  "es",
+                  "nombr"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "me",
+                  "llam",
+                  "nombr"
+                ],
+                "tokens": [
+                  "me",
+                  "llam",
+                  "nombr"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "soy",
+                  "nombr"
+                ],
+                "tokens": [
+                  "soy",
+                  "nombr"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "me",
+                  "apell",
+                  "apell"
+                ],
+                "tokens": [
+                  "me",
+                  "apell",
+                  "apell"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "mis",
+                  "apell",
+                  "son",
+                  "apell"
+                ],
+                "tokens": [
+                  "mis",
+                  "apell",
+                  "son",
+                  "apell"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "viv",
+                  "en",
+                  "direccion"
+                ],
+                "tokens": [
+                  "viv",
+                  "en",
+                  "direccion"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "mi",
+                  "direccion",
+                  "es",
+                  "direccion"
+                ],
+                "tokens": [
+                  "mi",
+                  "direccion",
+                  "es",
+                  "direccion"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "teng",
+                  "edad",
+                  "anos"
+                ],
+                "tokens": [
+                  "teng",
+                  "edad",
+                  "anos"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "mi",
+                  "dni",
+                  "es",
+                  "dni"
+                ],
+                "tokens": [
+                  "mi",
+                  "dni",
+                  "es",
+                  "dni"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "mi",
+                  "numer",
+                  "de",
+                  "telefon",
+                  "es",
+                  "telefon"
+                ],
+                "tokens": [
+                  "mi",
+                  "numer",
+                  "de",
+                  "telefon",
+                  "es",
+                  "telefon"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "hay",
+                  "miembr",
+                  "en",
+                  "mi",
+                  "famili"
+                ],
+                "tokens": [
+                  "hay",
+                  "miembr",
+                  "en",
+                  "mi",
+                  "famili"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "en",
+                  "mi",
+                  "famili",
+                  "hay",
+                  "miembr",
+                  "miembr"
+                ],
+                "tokens": [
+                  "en",
+                  "mi",
+                  "famili",
+                  "hay",
+                  "miembr",
+                  "miembr"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "el",
+                  "beneficiari",
+                  "es",
+                  "beneficiari"
+                ],
+                "tokens": [
+                  "el",
+                  "beneficiari",
+                  "es",
+                  "beneficiari"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "mi",
+                  "fich",
+                  "medic",
+                  "es",
+                  "fich"
+                ],
+                "tokens": [
+                  "mi",
+                  "fich",
+                  "medic",
+                  "es",
+                  "fich"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "si"
+                ],
+                "tokens": [
+                  "si"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "la",
+                  "enfermed",
+                  "es",
+                  "enfermed"
+                ],
+                "tokens": [
+                  "la",
+                  "enfermed",
+                  "es",
+                  "enfermed"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "que",
+                  "inclu",
+                  "la",
+                  "poliz"
+                ],
+                "tokens": [
+                  "que",
+                  "inclu",
+                  "la",
+                  "poliz"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "que",
+                  "inclu",
+                  "el",
+                  "segur"
+                ],
+                "tokens": [
+                  "que",
+                  "inclu",
+                  "el",
+                  "segur"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "quier",
+                  "elimin",
+                  "un",
+                  "segur"
+                ],
+                "tokens": [
+                  "quier",
+                  "elimin",
+                  "un",
+                  "segur"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "quier",
+                  "elimin",
+                  "una",
+                  "poliz"
+                ],
+                "tokens": [
+                  "quier",
+                  "elimin",
+                  "una",
+                  "poliz"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "quier",
+                  "darm",
+                  "de",
+                  "baj",
+                  "en",
+                  "un",
+                  "segur"
+                ],
+                "tokens": [
+                  "quier",
+                  "darm",
+                  "de",
+                  "baj",
+                  "en",
+                  "un",
+                  "segur"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "me",
+                  "gustari",
+                  "darm",
+                  "de",
+                  "baj",
+                  "de",
+                  "una",
+                  "poliz"
+                ],
+                "tokens": [
+                  "me",
+                  "gustari",
+                  "darm",
+                  "de",
+                  "baj",
+                  "de",
+                  "una",
+                  "poliz"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "deseari",
+                  "darm",
+                  "de",
+                  "baj",
+                  "de",
+                  "el",
+                  "segur",
+                  "contrat"
+                ],
+                "tokens": [
+                  "deseari",
+                  "darm",
+                  "de",
+                  "baj",
+                  "de",
+                  "el",
+                  "segur",
+                  "contrat"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "he",
+                  "ten",
+                  "un",
+                  "accident"
+                ],
+                "tokens": [
+                  "he",
+                  "ten",
+                  "un",
+                  "accident"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "he",
+                  "sufr",
+                  "un",
+                  "accident"
+                ],
+                "tokens": [
+                  "he",
+                  "sufr",
+                  "un",
+                  "accident"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "he",
+                  "provoc",
+                  "un",
+                  "accident"
+                ],
+                "tokens": [
+                  "he",
+                  "provoc",
+                  "un",
+                  "accident"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "he",
+                  "ten",
+                  "un",
+                  "siniestr"
+                ],
+                "tokens": [
+                  "he",
+                  "ten",
+                  "un",
+                  "siniestr"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "estoy",
+                  "en",
+                  "localizacion"
+                ],
+                "tokens": [
+                  "estoy",
+                  "en",
+                  "localizacion"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "no",
+                  "se",
+                  "dond",
+                  "estoy"
+                ],
+                "tokens": [
+                  "no",
+                  "se",
+                  "dond",
+                  "estoy"
+                ]
+              },
+              {
+                "intent": "default",
+                "utterance": [
+                  "no",
+                  "necesit",
+                  "nad"
+                ],
+                "tokens": [
+                  "no",
+                  "necesit",
+                  "nad"
+                ]
+              }
+            ],
+            "features": {
+              "hol": 3,
+              "quier": 8,
+              "hac": 3,
+              "una": 6,
+              "poliz": 7,
+              "de": 12,
+              "vid": 4,
+              "me": 4,
+              "gustari": 2,
+              "un": 8,
+              "segur": 6,
+              "deces": 2,
+              "mi": 7,
+              "nombr": 4,
+              "es": 7,
+              "llam": 1,
+              "soy": 1,
+              "apell": 4,
+              "mis": 1,
+              "son": 1,
+              "viv": 1,
+              "en": 5,
+              "direccion": 3,
+              "teng": 1,
+              "edad": 1,
+              "anos": 1,
+              "dni": 2,
+              "numer": 1,
+              "telefon": 2,
+              "hay": 2,
+              "miembr": 3,
+              "famili": 2,
+              "el": 3,
+              "beneficiari": 2,
+              "fich": 2,
+              "medic": 1,
+              "si": 1,
+              "la": 2,
+              "enfermed": 2,
+              "que": 2,
+              "inclu": 2,
+              "elimin": 2,
+              "darm": 3,
+              "baj": 3,
+              "deseari": 1,
+              "contrat": 1,
+              "he": 4,
+              "ten": 2,
+              "accident": 3,
+              "sufr": 1,
+              "provoc": 1,
+              "siniestr": 1,
+              "estoy": 2,
+              "localizacion": 1,
+              "no": 2,
+              "se": 1,
+              "dond": 1,
+              "necesit": 1,
+              "nad": 1
+            },
+            "isEditing": false,
+            "className": "BrainNLU",
+            "classifier": {
+              "className": "BrainClassifier",
+              "settings": {
+                "config": {
+                  "activation": "leaky-relu",
+                  "hiddenLayers": [],
+                  "iterations": 20000,
+                  "learningRate": 0.4,
+                  "errorThresh": 0.00005,
+                  "momentum": 0.5,
+                  "deltaErrorThresh": 1e-7,
+                  "maxDecimals": 9,
+                  "timeout": 120000
+                }
+              },
+              "labels": [],
+              "network": {
+                "sizes": [
+                  59,
+                  1
+                ],
+                "layers": [
+                  {
+                    "hol": {},
+                    "quier": {},
+                    "hac": {},
+                    "una": {},
+                    "poliz": {},
+                    "de": {},
+                    "vid": {},
+                    "me": {},
+                    "gustari": {},
+                    "un": {},
+                    "segur": {},
+                    "deces": {},
+                    "mi": {},
+                    "nombr": {},
+                    "es": {},
+                    "llam": {},
+                    "soy": {},
+                    "apell": {},
+                    "mis": {},
+                    "son": {},
+                    "viv": {},
+                    "en": {},
+                    "direccion": {},
+                    "teng": {},
+                    "edad": {},
+                    "anos": {},
+                    "dni": {},
+                    "numer": {},
+                    "telefon": {},
+                    "hay": {},
+                    "miembr": {},
+                    "famili": {},
+                    "el": {},
+                    "beneficiari": {},
+                    "fich": {},
+                    "medic": {},
+                    "si": {},
+                    "la": {},
+                    "enfermed": {},
+                    "que": {},
+                    "inclu": {},
+                    "elimin": {},
+                    "darm": {},
+                    "baj": {},
+                    "deseari": {},
+                    "contrat": {},
+                    "he": {},
+                    "ten": {},
+                    "accident": {},
+                    "sufr": {},
+                    "provoc": {},
+                    "siniestr": {},
+                    "estoy": {},
+                    "localizacion": {},
+                    "no": {},
+                    "se": {},
+                    "dond": {},
+                    "necesit": {},
+                    "nad": {}
+                  },
+                  {
+                    "default": {
+                      "bias": 16.572271347,
+                      "weights": {
+                        "hol": 2.81952858,
+                        "quier": 1.091885924,
+                        "hac": -2.385072231,
+                        "una": 0.753834128,
+                        "poliz": 1.013494134,
+                        "de": 1.114873171,
+                        "vid": -0.719072402,
+                        "me": 1.937226653,
+                        "gustari": -0.492428094,
+                        "un": 1.115833998,
+                        "segur": 0.682874382,
+                        "deces": 1.780222893,
+                        "mi": 0.147774965,
+                        "nombr": -0.369715095,
+                        "es": 1.049884439,
+                        "llam": 1.78299427,
+                        "soy": 3.754132748,
+                        "apell": 1.572944403,
+                        "mis": 0.926297426,
+                        "son": 0.926297426,
+                        "viv": 0.850845098,
+                        "en": 0.504948914,
+                        "direccion": 2.125761032,
+                        "teng": 1.151773453,
+                        "edad": 1.151773453,
+                        "anos": 1.151773453,
+                        "dni": 2.195577145,
+                        "numer": 0.558570504,
+                        "telefon": 0.558570504,
+                        "hay": 0.919924021,
+                        "miembr": 0.919924021,
+                        "famili": 0.919924021,
+                        "el": 1.601953983,
+                        "beneficiari": 0.764687777,
+                        "fich": 1.105614662,
+                        "medic": 1.105614662,
+                        "si": 3.55666399,
+                        "la": 1.31701982,
+                        "enfermed": 1.05735755,
+                        "que": 0.561416447,
+                        "inclu": 0.561416447,
+                        "elimin": 0.578667819,
+                        "darm": -0.504859924,
+                        "baj": -0.504859924,
+                        "deseari": 0.535508513,
+                        "contrat": 0.535508513,
+                        "he": 1.27022481,
+                        "ten": 0.406694442,
+                        "accident": 0.617833138,
+                        "sufr": 0.431065947,
+                        "provoc": 0.432464421,
+                        "siniestr": 0.652393043,
+                        "estoy": 1.58539176,
+                        "localizacion": 1.318589091,
+                        "no": 1.329255819,
+                        "se": 0.266787767,
+                        "dond": 0.266787767,
+                        "necesit": 1.062470078,
+                        "nad": 1.062470078
+                      }
+                    }
+                  }
+                ],
+                "trainOpts": {
+                  "iterations": 20000,
+                  "errorThresh": 0.00005,
+                  "deltaErrorThresh": 1e-7,
+                  "learningRate": 0.4,
+                  "momentum": 0.5,
+                  "leakyReluAlpha": 0.05,
+                  "maxDecimals": 9
+                }
+              }
+            }
+          },
+          "default": {
+            "settings": {
+              "language": "es"
+            },
+            "language": "es",
+            "keepStopwords": true,
+            "docs": [
+              {
+                "intent": "agent.hola",
+                "utterance": [
+                  "hol"
+                ],
+                "tokens": [
+                  "hol"
+                ]
+              },
+              {
+                "intent": "agent.askpolizavida",
+                "utterance": [
+                  "hol",
+                  "quier",
+                  "hac",
+                  "una",
+                  "poliz",
+                  "de",
+                  "vid"
+                ],
+                "tokens": [
+                  "hol",
+                  "quier",
+                  "hac",
+                  "una",
+                  "poliz",
+                  "de",
+                  "vid"
+                ]
+              },
+              {
+                "intent": "agent.askpolizavida",
+                "utterance": [
+                  "me",
+                  "gustari",
+                  "una",
+                  "poliz",
+                  "de",
+                  "vid"
+                ],
+                "tokens": [
+                  "me",
+                  "gustari",
+                  "una",
+                  "poliz",
+                  "de",
+                  "vid"
+                ]
+              },
+              {
+                "intent": "agent.askpolizavida",
+                "utterance": [
+                  "quier",
+                  "una",
+                  "poliz",
+                  "de",
+                  "vid"
+                ],
+                "tokens": [
+                  "quier",
+                  "una",
+                  "poliz",
+                  "de",
+                  "vid"
+                ]
+              },
+              {
+                "intent": "agent.askpolizavida",
+                "utterance": [
+                  "quier",
+                  "un",
+                  "segur",
+                  "de",
+                  "vid"
+                ],
+                "tokens": [
+                  "quier",
+                  "un",
+                  "segur",
+                  "de",
+                  "vid"
+                ]
+              },
+              {
+                "intent": "agent.askpolizadecesos",
+                "utterance": [
+                  "quier",
+                  "hac",
+                  "una",
+                  "poliz",
+                  "de",
+                  "deces"
+                ],
+                "tokens": [
+                  "quier",
+                  "hac",
+                  "una",
+                  "poliz",
+                  "de",
+                  "deces"
+                ]
+              },
+              {
+                "intent": "agent.askpolizadecesos",
+                "utterance": [
+                  "quier",
+                  "hac",
+                  "un",
+                  "segur",
+                  "de",
+                  "deces"
+                ],
+                "tokens": [
+                  "quier",
+                  "hac",
+                  "un",
+                  "segur",
+                  "de",
+                  "deces"
+                ]
+              },
+              {
+                "intent": "agent.asknombre",
+                "utterance": [
+                  "hol",
+                  "mi",
+                  "nombr",
+                  "es",
+                  "nombr"
+                ],
+                "tokens": [
+                  "hol",
+                  "mi",
+                  "nombr",
+                  "es",
+                  "nombr"
+                ]
+              },
+              {
+                "intent": "agent.asknombre",
+                "utterance": [
+                  "me",
+                  "llam",
+                  "nombr"
+                ],
+                "tokens": [
+                  "me",
+                  "llam",
+                  "nombr"
+                ]
+              },
+              {
+                "intent": "agent.asknombre",
+                "utterance": [
+                  "soy",
+                  "nombr"
+                ],
+                "tokens": [
+                  "soy",
+                  "nombr"
+                ]
+              },
+              {
+                "intent": "agent.askapellidos",
+                "utterance": [
+                  "me",
+                  "apell",
+                  "apell"
+                ],
+                "tokens": [
+                  "me",
+                  "apell",
+                  "apell"
+                ]
+              },
+              {
+                "intent": "agent.askapellidos",
+                "utterance": [
+                  "mis",
+                  "apell",
+                  "son",
+                  "apell"
+                ],
+                "tokens": [
+                  "mis",
+                  "apell",
+                  "son",
+                  "apell"
+                ]
+              },
+              {
+                "intent": "agent.askdireccion",
+                "utterance": [
+                  "viv",
+                  "en",
+                  "direccion"
+                ],
+                "tokens": [
+                  "viv",
+                  "en",
+                  "direccion"
+                ]
+              },
+              {
+                "intent": "agent.askdireccion",
+                "utterance": [
+                  "mi",
+                  "direccion",
+                  "es",
+                  "direccion"
+                ],
+                "tokens": [
+                  "mi",
+                  "direccion",
+                  "es",
+                  "direccion"
+                ]
+              },
+              {
+                "intent": "agent.askedad",
+                "utterance": [
+                  "teng",
+                  "edad",
+                  "anos"
+                ],
+                "tokens": [
+                  "teng",
+                  "edad",
+                  "anos"
+                ]
+              },
+              {
+                "intent": "agent.askdni",
+                "utterance": [
+                  "mi",
+                  "dni",
+                  "es",
+                  "dni"
+                ],
+                "tokens": [
+                  "mi",
+                  "dni",
+                  "es",
+                  "dni"
+                ]
+              },
+              {
+                "intent": "agent.asktlfn",
+                "utterance": [
+                  "mi",
+                  "numer",
+                  "de",
+                  "telefon",
+                  "es",
+                  "telefon"
+                ],
+                "tokens": [
+                  "mi",
+                  "numer",
+                  "de",
+                  "telefon",
+                  "es",
+                  "telefon"
+                ]
+              },
+              {
+                "intent": "agent.askmiembros",
+                "utterance": [
+                  "hay",
+                  "miembr",
+                  "en",
+                  "mi",
+                  "famili"
+                ],
+                "tokens": [
+                  "hay",
+                  "miembr",
+                  "en",
+                  "mi",
+                  "famili"
+                ]
+              },
+              {
+                "intent": "agent.askmiembros",
+                "utterance": [
+                  "en",
+                  "mi",
+                  "famili",
+                  "hay",
+                  "miembr",
+                  "miembr"
+                ],
+                "tokens": [
+                  "en",
+                  "mi",
+                  "famili",
+                  "hay",
+                  "miembr",
+                  "miembr"
+                ]
+              },
+              {
+                "intent": "agent.askbeneficiario",
+                "utterance": [
+                  "el",
+                  "beneficiari",
+                  "es",
+                  "beneficiari"
+                ],
+                "tokens": [
+                  "el",
+                  "beneficiari",
+                  "es",
+                  "beneficiari"
+                ]
+              },
+              {
+                "intent": "agent.askficha",
+                "utterance": [
+                  "mi",
+                  "fich",
+                  "medic",
+                  "es",
+                  "fich"
+                ],
+                "tokens": [
+                  "mi",
+                  "fich",
+                  "medic",
+                  "es",
+                  "fich"
+                ]
+              },
+              {
+                "intent": "enfermedadYES.askenfermedad",
+                "utterance": [
+                  "si"
+                ],
+                "tokens": [
+                  "si"
+                ]
+              },
+              {
+                "intent": "enfermedadYES.enfermedadRecibida",
+                "utterance": [
+                  "la",
+                  "enfermed",
+                  "es",
+                  "enfermed"
+                ],
+                "tokens": [
+                  "la",
+                  "enfermed",
+                  "es",
+                  "enfermed"
+                ]
+              },
+              {
+                "intent": "enfermedadYES.enfermedadIncluye",
+                "utterance": [
+                  "que",
+                  "inclu",
+                  "la",
+                  "poliz"
+                ],
+                "tokens": [
+                  "que",
+                  "inclu",
+                  "la",
+                  "poliz"
+                ]
+              },
+              {
+                "intent": "enfermedadYES.enfermedadIncluye",
+                "utterance": [
+                  "que",
+                  "inclu",
+                  "el",
+                  "segur"
+                ],
+                "tokens": [
+                  "que",
+                  "inclu",
+                  "el",
+                  "segur"
+                ]
+              },
+              {
+                "intent": "agent.eliminarSeguro",
+                "utterance": [
+                  "quier",
+                  "elimin",
+                  "un",
+                  "segur"
+                ],
+                "tokens": [
+                  "quier",
+                  "elimin",
+                  "un",
+                  "segur"
+                ]
+              },
+              {
+                "intent": "agent.eliminarSeguro",
+                "utterance": [
+                  "quier",
+                  "elimin",
+                  "una",
+                  "poliz"
+                ],
+                "tokens": [
+                  "quier",
+                  "elimin",
+                  "una",
+                  "poliz"
+                ]
+              },
+              {
+                "intent": "agent.eliminarSeguro",
+                "utterance": [
+                  "quier",
+                  "darm",
+                  "de",
+                  "baj",
+                  "en",
+                  "un",
+                  "segur"
+                ],
+                "tokens": [
+                  "quier",
+                  "darm",
+                  "de",
+                  "baj",
+                  "en",
+                  "un",
+                  "segur"
+                ]
+              },
+              {
+                "intent": "agent.eliminarSeguro",
+                "utterance": [
+                  "me",
+                  "gustari",
+                  "darm",
+                  "de",
+                  "baj",
+                  "de",
+                  "una",
+                  "poliz"
+                ],
+                "tokens": [
+                  "me",
+                  "gustari",
+                  "darm",
+                  "de",
+                  "baj",
+                  "de",
+                  "una",
+                  "poliz"
+                ]
+              },
+              {
+                "intent": "agent.eliminarSeguro",
+                "utterance": [
+                  "deseari",
+                  "darm",
+                  "de",
+                  "baj",
+                  "de",
+                  "el",
+                  "segur",
+                  "contrat"
+                ],
+                "tokens": [
+                  "deseari",
+                  "darm",
+                  "de",
+                  "baj",
+                  "de",
+                  "el",
+                  "segur",
+                  "contrat"
+                ]
+              },
+              {
+                "intent": "agent.acidente",
+                "utterance": [
+                  "he",
+                  "ten",
+                  "un",
+                  "accident"
+                ],
+                "tokens": [
+                  "he",
+                  "ten",
+                  "un",
+                  "accident"
+                ]
+              },
+              {
+                "intent": "agent.acidente",
+                "utterance": [
+                  "he",
+                  "sufr",
+                  "un",
+                  "accident"
+                ],
+                "tokens": [
+                  "he",
+                  "sufr",
+                  "un",
+                  "accident"
+                ]
+              },
+              {
+                "intent": "agent.acidente",
+                "utterance": [
+                  "he",
+                  "provoc",
+                  "un",
+                  "accident"
+                ],
+                "tokens": [
+                  "he",
+                  "provoc",
+                  "un",
+                  "accident"
+                ]
+              },
+              {
+                "intent": "agent.acidente",
+                "utterance": [
+                  "he",
+                  "ten",
+                  "un",
+                  "siniestr"
+                ],
+                "tokens": [
+                  "he",
+                  "ten",
+                  "un",
+                  "siniestr"
+                ]
+              },
+              {
+                "intent": "agent.asklocalizacion",
+                "utterance": [
+                  "estoy",
+                  "en",
+                  "localizacion"
+                ],
+                "tokens": [
+                  "estoy",
+                  "en",
+                  "localizacion"
+                ]
+              },
+              {
+                "intent": "agent.asklocalizacionNo",
+                "utterance": [
+                  "no",
+                  "se",
+                  "dond",
+                  "estoy"
+                ],
+                "tokens": [
+                  "no",
+                  "se",
+                  "dond",
+                  "estoy"
+                ]
+              },
+              {
+                "intent": "agent.necesidadNO",
+                "utterance": [
+                  "no",
+                  "necesit",
+                  "nad"
+                ],
+                "tokens": [
+                  "no",
+                  "necesit",
+                  "nad"
+                ]
+              }
+            ],
+            "features": {
+              "hol": 3,
+              "quier": 8,
+              "hac": 3,
+              "una": 6,
+              "poliz": 7,
+              "de": 12,
+              "vid": 4,
+              "me": 4,
+              "gustari": 2,
+              "un": 8,
+              "segur": 6,
+              "deces": 2,
+              "mi": 7,
+              "nombr": 4,
+              "es": 7,
+              "llam": 1,
+              "soy": 1,
+              "apell": 4,
+              "mis": 1,
+              "son": 1,
+              "viv": 1,
+              "en": 5,
+              "direccion": 3,
+              "teng": 1,
+              "edad": 1,
+              "anos": 1,
+              "dni": 2,
+              "numer": 1,
+              "telefon": 2,
+              "hay": 2,
+              "miembr": 3,
+              "famili": 2,
+              "el": 3,
+              "beneficiari": 2,
+              "fich": 2,
+              "medic": 1,
+              "si": 1,
+              "la": 2,
+              "enfermed": 2,
+              "que": 2,
+              "inclu": 2,
+              "elimin": 2,
+              "darm": 3,
+              "baj": 3,
+              "deseari": 1,
+              "contrat": 1,
+              "he": 4,
+              "ten": 2,
+              "accident": 3,
+              "sufr": 1,
+              "provoc": 1,
+              "siniestr": 1,
+              "estoy": 2,
+              "localizacion": 1,
+              "no": 2,
+              "se": 1,
+              "dond": 1,
+              "necesit": 1,
+              "nad": 1
+            },
+            "isEditing": false,
+            "className": "BrainNLU",
+            "classifier": {
+              "className": "BrainClassifier",
+              "settings": {
+                "config": {
+                  "activation": "leaky-relu",
+                  "hiddenLayers": [],
+                  "iterations": 20000,
+                  "learningRate": 0.4,
+                  "errorThresh": 0.00005,
+                  "momentum": 0.5,
+                  "deltaErrorThresh": 1e-7,
+                  "maxDecimals": 9,
+                  "timeout": 120000
+                }
+              },
+              "labels": [],
+              "network": {
+                "sizes": [
+                  59,
+                  20
+                ],
+                "layers": [
+                  {
+                    "hol": {},
+                    "quier": {},
+                    "hac": {},
+                    "una": {},
+                    "poliz": {},
+                    "de": {},
+                    "vid": {},
+                    "me": {},
+                    "gustari": {},
+                    "un": {},
+                    "segur": {},
+                    "deces": {},
+                    "mi": {},
+                    "nombr": {},
+                    "es": {},
+                    "llam": {},
+                    "soy": {},
+                    "apell": {},
+                    "mis": {},
+                    "son": {},
+                    "viv": {},
+                    "en": {},
+                    "direccion": {},
+                    "teng": {},
+                    "edad": {},
+                    "anos": {},
+                    "dni": {},
+                    "numer": {},
+                    "telefon": {},
+                    "hay": {},
+                    "miembr": {},
+                    "famili": {},
+                    "el": {},
+                    "beneficiari": {},
+                    "fich": {},
+                    "medic": {},
+                    "si": {},
+                    "la": {},
+                    "enfermed": {},
+                    "que": {},
+                    "inclu": {},
+                    "elimin": {},
+                    "darm": {},
+                    "baj": {},
+                    "deseari": {},
+                    "contrat": {},
+                    "he": {},
+                    "ten": {},
+                    "accident": {},
+                    "sufr": {},
+                    "provoc": {},
+                    "siniestr": {},
+                    "estoy": {},
+                    "localizacion": {},
+                    "no": {},
+                    "se": {},
+                    "dond": {},
+                    "necesit": {},
+                    "nad": {}
+                  },
+                  {
+                    "agent.hola": {
+                      "bias": 2.716637611,
+                      "weights": {
+                        "hol": 14.482373238,
+                        "quier": -2.841635942,
+                        "hac": -2.78792119,
+                        "una": -2.807396412,
+                        "poliz": -2.858837366,
+                        "de": -2.856876612,
+                        "vid": -2.812778711,
+                        "me": -1.06129396,
+                        "gustari": -0.018253813,
+                        "un": -0.973640323,
+                        "segur": -0.678525925,
+                        "deces": -0.017115267,
+                        "mi": -5.479349136,
+                        "nombr": -5.553722858,
+                        "es": -5.528612137,
+                        "llam": -0.069076844,
+                        "soy": -0.097405188,
+                        "apell": -1.551054716,
+                        "mis": -0.577091455,
+                        "son": -0.577091455,
+                        "viv": -0.6960724,
+                        "en": -1.266672134,
+                        "direccion": -0.711311102,
+                        "teng": -0.88209784,
+                        "edad": -0.88209784,
+                        "anos": -0.88209784,
+                        "dni": -0.015618673,
+                        "numer": -0.004096889,
+                        "telefon": -0.004096889,
+                        "hay": -0.047582641,
+                        "miembr": -0.047582641,
+                        "famili": -0.047582641,
+                        "el": -0.673866808,
+                        "beneficiari": -0.047834016,
+                        "fich": -0.009571355,
+                        "medic": -0.009571355,
+                        "si": -2.23869133,
+                        "la": -0.100452743,
+                        "enfermed": -0.049011748,
+                        "que": -0.655173719,
+                        "inclu": -0.655173719,
+                        "elimin": -0.029409971,
+                        "darm": -0.022885729,
+                        "baj": -0.022885729,
+                        "deseari": -0.022300107,
+                        "contrat": -0.022300107,
+                        "he": -0.921147168,
+                        "ten": -0.441736281,
+                        "accident": -0.572672307,
+                        "sufr": -0.241780072,
+                        "provoc": -0.237630725,
+                        "siniestr": -0.348474473,
+                        "estoy": -0.876979649,
+                        "localizacion": -0.522431314,
+                        "no": -1.112958431,
+                        "se": -0.354548007,
+                        "dond": -0.354548007,
+                        "necesit": -0.758410275,
+                        "nad": -0.758410275
+                      }
+                    },
+                    "agent.askpolizavida": {
+                      "bias": -1.078217387,
+                      "weights": {
+                        "hol": 1.319505334,
+                        "quier": 1.484008551,
+                        "hac": -1.659468889,
+                        "una": 1.244963288,
+                        "poliz": 0.869790077,
+                        "de": 4.236946583,
+                        "vid": 13.375881195,
+                        "me": 0.412992775,
+                        "gustari": 0.905067742,
+                        "un": 0.977750301,
+                        "segur": 0.978586137,
+                        "deces": -5.049708366,
+                        "mi": -0.965759277,
+                        "nombr": -0.380788982,
+                        "es": -0.976917267,
+                        "llam": -0.21784766,
+                        "soy": -0.062920459,
+                        "apell": -0.33618179,
+                        "mis": -0.061952878,
+                        "son": -0.061952878,
+                        "viv": -0.04904737,
+                        "en": -0.734466553,
+                        "direccion": -0.081638016,
+                        "teng": -0.075912639,
+                        "edad": -0.075912639,
+                        "anos": -0.075912639,
+                        "dni": -0.031114951,
+                        "numer": -0.754033685,
+                        "telefon": -0.754033685,
+                        "hay": -0.037854005,
+                        "miembr": -0.037854005,
+                        "famili": -0.037854005,
+                        "el": -0.19146283,
+                        "beneficiari": -0.025933089,
+                        "fich": -0.010145037,
+                        "medic": -0.010145037,
+                        "si": -0.083120123,
+                        "la": -0.398248643,
+                        "enfermed": -0.023078926,
+                        "que": -0.435753822,
+                        "inclu": -0.435753822,
+                        "elimin": -2.706831694,
+                        "darm": -3.335189342,
+                        "baj": -3.335189342,
+                        "deseari": -0.104945682,
+                        "contrat": -0.104945682,
+                        "he": -0.16636546,
+                        "ten": -0.0849787,
+                        "accident": -0.115480363,
+                        "sufr": -0.04239995,
+                        "provoc": -0.038986843,
+                        "siniestr": -0.050885119,
+                        "estoy": -0.013808268,
+                        "localizacion": 0,
+                        "no": -0.027921293,
+                        "se": -0.013808268,
+                        "dond": -0.013808268,
+                        "necesit": -0.014113024,
+                        "nad": -0.014113024
+                      }
+                    },
+                    "agent.askpolizadecesos": {
+                      "bias": -0.301885575,
+                      "weights": {
+                        "hol": -4.151080132,
+                        "quier": 1.249141812,
+                        "hac": 5.936530113,
+                        "una": 0.321238518,
+                        "poliz": 0.240926489,
+                        "de": 2.379920244,
+                        "vid": -5.589588642,
+                        "me": -0.361522079,
+                        "gustari": -0.287935972,
+                        "un": 0.373241335,
+                        "segur": 0.357568622,
+                        "deces": 10.059540749,
+                        "mi": -0.581843793,
+                        "nombr": -0.112483382,
+                        "es": -0.591269255,
+                        "llam": -0.035982069,
+                        "soy": -0.049867123,
+                        "apell": -0.085579276,
+                        "mis": -0.047975227,
+                        "son": -0.047975227,
+                        "viv": -0.029812131,
+                        "en": -1.34427774,
+                        "direccion": -0.054414671,
+                        "teng": -0.050176639,
+                        "edad": -0.050176639,
+                        "anos": -0.050176639,
+                        "dni": -0.02315414,
+                        "numer": -0.475430131,
+                        "telefon": -0.475430131,
+                        "hay": -0.024964128,
+                        "miembr": -0.024964128,
+                        "famili": -0.024964128,
+                        "el": -0.299332023,
+                        "beneficiari": -0.016930755,
+                        "fich": -0.007058958,
+                        "medic": -0.007058958,
+                        "si": -0.0537613,
+                        "la": -0.097770996,
+                        "enfermed": -0.017458893,
+                        "que": -0.228565633,
+                        "inclu": -0.228565633,
+                        "elimin": -2.028292418,
+                        "darm": -1.614611983,
+                        "baj": -1.614611983,
+                        "deseari": -0.134147719,
+                        "contrat": -0.134147719,
+                        "he": -0.266728431,
+                        "ten": -0.136754811,
+                        "accident": -0.199047238,
+                        "sufr": -0.068768971,
+                        "provoc": -0.061204631,
+                        "siniestr": -0.067681186,
+                        "estoy": -0.006308335,
+                        "localizacion": 0,
+                        "no": -0.012699244,
+                        "se": -0.006308335,
+                        "dond": -0.006308335,
+                        "necesit": -0.006390907,
+                        "nad": -0.006390907
+                      }
+                    },
+                    "agent.asknombre": {
+                      "bias": -0.695726156,
+                      "weights": {
+                        "hol": 1.493034482,
+                        "quier": -0.364835232,
+                        "hac": -0.189033523,
+                        "una": -0.654953897,
+                        "poliz": -0.740438819,
+                        "de": -1.120634556,
+                        "vid": -0.371346682,
+                        "me": 1.390506506,
+                        "gustari": -0.41013822,
+                        "un": -0.482854068,
+                        "segur": -0.257231861,
+                        "deces": -0.001633788,
+                        "mi": 1.670927763,
+                        "nombr": 15.833903313,
+                        "es": 1.121208668,
+                        "llam": 3.53977561,
+                        "soy": 4.939329624,
+                        "apell": -1.9416219,
+                        "mis": -0.202491641,
+                        "son": -0.202491641,
+                        "viv": -0.160011649,
+                        "en": -0.686782241,
+                        "direccion": -1.990731478,
+                        "teng": -0.339343131,
+                        "edad": -0.339343131,
+                        "anos": -0.339343131,
+                        "dni": -1.954262137,
+                        "numer": -0.484495848,
+                        "telefon": -0.484495848,
+                        "hay": -0.387893856,
+                        "miembr": -0.387893856,
+                        "famili": -0.387893856,
+                        "el": -0.614082813,
+                        "beneficiari": -0.476870447,
+                        "fich": -1.026530504,
+                        "medic": -1.026530504,
+                        "si": -0.567175269,
+                        "la": -0.546224892,
+                        "enfermed": -0.460740298,
+                        "que": -0.203125477,
+                        "inclu": -0.203125477,
+                        "elimin": -0.158405364,
+                        "darm": -0.263159275,
+                        "baj": -0.263159275,
+                        "deseari": -0.019571757,
+                        "contrat": -0.019571757,
+                        "he": -0.362834752,
+                        "ten": -0.185053155,
+                        "accident": -0.263337582,
+                        "sufr": -0.092986912,
+                        "provoc": -0.084794663,
+                        "siniestr": -0.099497139,
+                        "estoy": -0.305701911,
+                        "localizacion": -0.123576388,
+                        "no": -0.437235087,
+                        "se": -0.182125509,
+                        "dond": -0.182125509,
+                        "necesit": -0.255109608,
+                        "nad": -0.255109608
+                      }
+                    },
+                    "agent.askapellidos": {
+                      "bias": 1.18626523,
+                      "weights": {
+                        "hol": -1.15807724,
+                        "quier": -0.248064548,
+                        "hac": -0.012208143,
+                        "una": -1.401717544,
+                        "poliz": -1.506222486,
+                        "de": -1.436878443,
+                        "vid": -0.889438927,
+                        "me": 5.423086166,
+                        "gustari": -1.321857929,
+                        "un": -0.617445707,
+                        "segur": -0.39311865,
+                        "deces": -0.00492396,
+                        "mi": -0.547866583,
+                        "nombr": -3.291548014,
+                        "es": -0.840317845,
+                        "llam": -3.100839615,
+                        "soy": -0.183569506,
+                        "apell": 12.906019211,
+                        "mis": 3.060251236,
+                        "son": 3.060251236,
+                        "viv": -0.30725795,
+                        "en": -0.709181488,
+                        "direccion": -0.414644361,
+                        "teng": -0.45775941,
+                        "edad": -0.45775941,
+                        "anos": -0.45775941,
+                        "dni": -0.143212304,
+                        "numer": -0.053430822,
+                        "telefon": -0.053430822,
+                        "hay": -0.145395219,
+                        "miembr": -0.145395219,
+                        "famili": -0.145395219,
+                        "el": -0.432288259,
+                        "beneficiari": -0.207374424,
+                        "fich": -0.091302484,
+                        "medic": -0.091302484,
+                        "si": -1.165940762,
+                        "la": -0.334977418,
+                        "enfermed": -0.230472311,
+                        "que": -0.303910434,
+                        "inclu": -0.303910434,
+                        "elimin": -0.211983114,
+                        "darm": -0.489085883,
+                        "baj": -0.489085883,
+                        "deseari": -0.025508376,
+                        "contrat": -0.025508376,
+                        "he": -0.449240655,
+                        "ten": -0.232026935,
+                        "accident": -0.312419116,
+                        "sufr": -0.112698078,
+                        "provoc": -0.104515761,
+                        "siniestr": -0.136821553,
+                        "estoy": -0.461168617,
+                        "localizacion": -0.23840563,
+                        "no": -0.601777971,
+                        "se": -0.222763032,
+                        "dond": -0.222763032,
+                        "necesit": -0.379015148,
+                        "nad": -0.379015148
+                      }
+                    },
+                    "agent.askdireccion": {
+                      "bias": 0.268879861,
+                      "weights": {
+                        "hol": -1.862167954,
+                        "quier": -0.385213405,
+                        "hac": -0.003127151,
+                        "una": -0.104633309,
+                        "poliz": -0.166193068,
+                        "de": -1.455760121,
+                        "vid": -0.008112068,
+                        "me": -0.250244945,
+                        "gustari": -0.014739655,
+                        "un": -0.473647118,
+                        "segur": -0.338880986,
+                        "deces": -0.001316962,
+                        "mi": 1.993348479,
+                        "nombr": -1.852860928,
+                        "es": 1.575796604,
+                        "llam": -0.040149394,
+                        "soy": -0.054524615,
+                        "apell": -0.349143118,
+                        "mis": -0.153787225,
+                        "son": -0.153787225,
+                        "viv": 3.716641188,
+                        "en": 0.946436465,
+                        "direccion": 15.387395859,
+                        "teng": -0.265229076,
+                        "edad": -0.265229076,
+                        "anos": -0.265229076,
+                        "dni": -3.491590977,
+                        "numer": -1.180307388,
+                        "telefon": -1.180307388,
+                        "hay": -1.373016715,
+                        "miembr": -1.373016715,
+                        "famili": -1.373016715,
+                        "el": -0.946454048,
+                        "beneficiari": -0.902892828,
+                        "fich": -1.874321103,
+                        "medic": -1.874321103,
+                        "si": -0.486053973,
+                        "la": -0.949232876,
+                        "enfermed": -0.887673199,
+                        "que": -0.101968773,
+                        "inclu": -0.101968773,
+                        "elimin": -0.12765196,
+                        "darm": -0.266024321,
+                        "baj": -0.266024321,
+                        "deseari": -0.003152237,
+                        "contrat": -0.003152237,
+                        "he": -0.178327426,
+                        "ten": -0.091334164,
+                        "accident": -0.130197555,
+                        "sufr": -0.045621391,
+                        "provoc": -0.041371852,
+                        "siniestr": -0.048129842,
+                        "estoy": -1.208861351,
+                        "localizacion": -1.144564986,
+                        "no": -0.256413102,
+                        "se": -0.064296462,
+                        "dond": -0.064296462,
+                        "necesit": -0.192116722,
+                        "nad": -0.192116722
+                      }
+                    },
+                    "agent.askedad": {
+                      "bias": 0.815558612,
+                      "weights": {
+                        "hol": -0.789452255,
+                        "quier": -0.24270986,
+                        "hac": -0.025347384,
+                        "una": -0.199660987,
+                        "poliz": -0.30602476,
+                        "de": -0.186024472,
+                        "vid": -0.043235995,
+                        "me": -0.421836764,
+                        "gustari": -0.038308341,
+                        "un": -0.383182406,
+                        "segur": -0.232091516,
+                        "deces": -0.017752966,
+                        "mi": -0.340210825,
+                        "nombr": -0.506557703,
+                        "es": -0.526029646,
+                        "llam": -0.145152003,
+                        "soy": -0.353944987,
+                        "apell": -0.462594986,
+                        "mis": -0.224218503,
+                        "son": -0.224218503,
+                        "viv": -0.2017764,
+                        "en": -0.479110271,
+                        "direccion": -0.21244821,
+                        "teng": 6.390543938,
+                        "edad": 6.390543938,
+                        "anos": 6.390543938,
+                        "dni": -0.108588278,
+                        "numer": -0.043797657,
+                        "telefon": -0.043797657,
+                        "hay": -0.10175404,
+                        "miembr": -0.10175404,
+                        "famili": -0.10175404,
+                        "el": -0.290387213,
+                        "beneficiari": -0.139652923,
+                        "fich": -0.067938283,
+                        "medic": -0.067938283,
+                        "si": -0.794721007,
+                        "la": -0.254283696,
+                        "enfermed": -0.147919968,
+                        "que": -0.211376294,
+                        "inclu": -0.211376294,
+                        "elimin": -0.184513077,
+                        "darm": -0.081237875,
+                        "baj": -0.081237875,
+                        "deseari": -0.045721728,
+                        "contrat": -0.045721728,
+                        "he": -0.301825166,
+                        "ten": -0.155779764,
+                        "accident": -0.20625785,
+                        "sufr": -0.075466752,
+                        "provoc": -0.070578665,
+                        "siniestr": -0.095567361,
+                        "estoy": -0.305283964,
+                        "localizacion": -0.163442776,
+                        "no": -0.395684242,
+                        "se": -0.141841277,
+                        "dond": -0.141841277,
+                        "necesit": -0.253843069,
+                        "nad": -0.253843069
+                      }
+                    },
+                    "agent.askdni": {
+                      "bias": 0.173974484,
+                      "weights": {
+                        "hol": -2.405889511,
+                        "quier": -0.065600581,
+                        "hac": -0.005326896,
+                        "una": -0.046942823,
+                        "poliz": -0.065110222,
+                        "de": -1.631154299,
+                        "vid": -0.009409067,
+                        "me": -0.074463978,
+                        "gustari": -0.009743445,
+                        "un": -0.107386395,
+                        "segur": -0.046013232,
+                        "deces": -0.002549034,
+                        "mi": 2.930470467,
+                        "nombr": -2.398388863,
+                        "es": 1.777290106,
+                        "llam": -0.008660492,
+                        "soy": -0.008211958,
+                        "apell": -0.097016148,
+                        "mis": -0.040956113,
+                        "son": -0.040956113,
+                        "viv": -0.002918934,
+                        "en": -0.786578476,
+                        "direccion": -4.345035553,
+                        "teng": -0.052374627,
+                        "edad": -0.052374627,
+                        "anos": -0.052374627,
+                        "dni": 14.447458267,
+                        "numer": -1.605714917,
+                        "telefon": -1.605714917,
+                        "hay": -0.7719872,
+                        "miembr": -0.7719872,
+                        "famili": -0.7719872,
+                        "el": -0.982736826,
+                        "beneficiari": -0.965124846,
+                        "fich": -2.415659904,
+                        "medic": -2.415659904,
+                        "si": -0.172636807,
+                        "la": -0.978207648,
+                        "enfermed": -0.960040212,
+                        "que": -0.031799711,
+                        "inclu": -0.031799711,
+                        "elimin": -0.053884275,
+                        "darm": -0.013481377,
+                        "baj": -0.013481377,
+                        "deseari": -0.003979716,
+                        "contrat": -0.003979716,
+                        "he": -0.078985162,
+                        "ten": -0.040206917,
+                        "accident": -0.058716279,
+                        "sufr": -0.020377971,
+                        "provoc": -0.01840028,
+                        "siniestr": -0.020268893,
+                        "estoy": -0.050091583,
+                        "localizacion": -0.008715898,
+                        "no": -0.095109187,
+                        "se": -0.041375689,
+                        "dond": -0.041375689,
+                        "necesit": -0.053733539,
+                        "nad": -0.053733539
+                      }
+                    },
+                    "agent.asktlfn": {
+                      "bias": -0.760932148,
+                      "weights": {
+                        "hol": -0.992991447,
+                        "quier": -1.138056755,
+                        "hac": -0.510175586,
+                        "una": -0.956392288,
+                        "poliz": -0.966860831,
+                        "de": 4.741459846,
+                        "vid": -0.969022393,
+                        "me": -0.542982519,
+                        "gustari": -0.541842401,
+                        "un": -0.747409105,
+                        "segur": -1.136644244,
+                        "deces": -0.445039511,
+                        "mi": 1.374941111,
+                        "nombr": -0.918804049,
+                        "es": 1.0108459,
+                        "llam": -0.00000782,
+                        "soy": -0.002048441,
+                        "apell": -0.007836086,
+                        "mis": -0.00670381,
+                        "son": -0.00670381,
+                        "viv": 0,
+                        "en": -0.408503234,
+                        "direccion": -1.618030071,
+                        "teng": -0.003954427,
+                        "edad": -0.003954427,
+                        "anos": -0.003954427,
+                        "dni": -1.600164294,
+                        "numer": 6.805670261,
+                        "telefon": 6.805670261,
+                        "hay": -0.311817229,
+                        "miembr": -0.311817229,
+                        "famili": -0.311817229,
+                        "el": -0.733935893,
+                        "beneficiari": -0.320799232,
+                        "fich": -0.983977199,
+                        "medic": -0.983977199,
+                        "si": -0.032394387,
+                        "la": -0.365581036,
+                        "enfermed": -0.355112493,
+                        "que": -0.019390456,
+                        "inclu": -0.019390456,
+                        "elimin": -0.019897392,
+                        "darm": -0.650157273,
+                        "baj": -0.650157273,
+                        "deseari": -0.404215485,
+                        "contrat": -0.404215485,
+                        "he": -0.0239006,
+                        "ten": -0.012098752,
+                        "accident": -0.018567417,
+                        "sufr": -0.006281544,
+                        "provoc": -0.005520304,
+                        "siniestr": -0.005333181,
+                        "estoy": -0.019545371,
+                        "localizacion": -0.003594165,
+                        "no": -0.032538719,
+                        "se": -0.015951203,
+                        "dond": -0.015951203,
+                        "necesit": -0.016587513,
+                        "nad": -0.016587513
+                      }
+                    },
+                    "agent.askmiembros": {
+                      "bias": -0.20086956,
+                      "weights": {
+                        "hol": -0.448139399,
+                        "quier": -0.455056071,
+                        "hac": -0.004111042,
+                        "una": -0.067016654,
+                        "poliz": -0.124091171,
+                        "de": -0.616835058,
+                        "vid": -0.014125037,
+                        "me": -0.105635755,
+                        "gustari": -0.022281323,
+                        "un": -0.50892514,
+                        "segur": -0.455251127,
+                        "deces": -0.001449024,
+                        "mi": 2.925033808,
+                        "nombr": -0.45476377,
+                        "es": -2.077445745,
+                        "llam": -0.029466597,
+                        "soy": -0.034130812,
+                        "apell": -0.108977169,
+                        "mis": -0.05508934,
+                        "son": -0.05508934,
+                        "viv": -0.973895848,
+                        "en": 2.46587491,
+                        "direccion": -1.291045547,
+                        "teng": -0.04959704,
+                        "edad": -0.04959704,
+                        "anos": -0.04959704,
+                        "dni": -0.64608407,
+                        "numer": -0.202569082,
+                        "telefon": -0.202569082,
+                        "hay": 4.936613083,
+                        "miembr": 4.936613083,
+                        "famili": 4.936613083,
+                        "el": -0.082820438,
+                        "beneficiari": -0.037890084,
+                        "fich": -0.454611659,
+                        "medic": -0.454611659,
+                        "si": -0.118763469,
+                        "la": -0.085051872,
+                        "enfermed": -0.027977357,
+                        "que": -0.09742409,
+                        "inclu": -0.09742409,
+                        "elimin": -0.067652218,
+                        "darm": -0.398691893,
+                        "baj": -0.398691893,
+                        "deseari": -0.004580784,
+                        "contrat": -0.004580784,
+                        "he": -0.098604426,
+                        "ten": -0.04983392,
+                        "accident": -0.076221108,
+                        "sufr": -0.025888337,
+                        "provoc": -0.022882167,
+                        "siniestr": -0.022383312,
+                        "estoy": -1.149370551,
+                        "localizacion": -1.115499854,
+                        "no": -0.098319359,
+                        "se": -0.033870712,
+                        "dond": -0.033870712,
+                        "necesit": -0.064448647,
+                        "nad": -0.064448647
+                      }
+                    },
+                    "agent.askbeneficiario": {
+                      "bias": 0.143994287,
+                      "weights": {
+                        "hol": -0.558931947,
+                        "quier": -0.089328006,
+                        "hac": -0.005763199,
+                        "una": -0.07803046,
+                        "poliz": -0.099067107,
+                        "de": -0.973263562,
+                        "vid": -0.01076944,
+                        "me": -0.116742365,
+                        "gustari": -0.01609082,
+                        "un": -0.141622722,
+                        "segur": -2.713044882,
+                        "deces": -0.00223508,
+                        "mi": -3.173022032,
+                        "nombr": -0.556597471,
+                        "es": 4.004769802,
+                        "llam": -0.023073951,
+                        "soy": -0.029167669,
+                        "apell": -0.146606132,
+                        "mis": -0.069028549,
+                        "son": -0.069028549,
+                        "viv": -0.026308971,
+                        "en": -0.105499409,
+                        "direccion": -0.967290878,
+                        "teng": -0.082088225,
+                        "edad": -0.082088225,
+                        "anos": -0.082088225,
+                        "dni": -0.954350412,
+                        "numer": -0.201803878,
+                        "telefon": -0.201803878,
+                        "hay": 0,
+                        "miembr": 0,
+                        "famili": 0,
+                        "el": 6.536615372,
+                        "beneficiari": 9.222236633,
+                        "fich": -0.571532845,
+                        "medic": -0.571532845,
+                        "si": -0.233404711,
+                        "la": -2.065504074,
+                        "enfermed": -2.044467688,
+                        "que": -1.969381928,
+                        "inclu": -1.969381928,
+                        "elimin": -0.07127165,
+                        "darm": -0.758454978,
+                        "baj": -0.758454978,
+                        "deseari": -0.737312257,
+                        "contrat": -0.737312257,
+                        "he": -0.114234358,
+                        "ten": -0.058318719,
+                        "accident": -0.084166653,
+                        "sufr": -0.029333444,
+                        "provoc": -0.026582202,
+                        "siniestr": -0.030067703,
+                        "estoy": -0.120610461,
+                        "localizacion": -0.069745861,
+                        "no": -0.128975362,
+                        "se": -0.050864592,
+                        "dond": -0.050864592,
+                        "necesit": -0.078110769,
+                        "nad": -0.078110769
+                      }
+                    },
+                    "agent.askficha": {
+                      "bias": -0.062148321,
+                      "weights": {
+                        "hol": -1.331807017,
+                        "quier": -0.081993639,
+                        "hac": -0.010780737,
+                        "una": -0.06245615,
+                        "poliz": -0.086975068,
+                        "de": -0.899380803,
+                        "vid": -0.019579282,
+                        "me": -0.074331209,
+                        "gustari": -0.019846829,
+                        "un": -0.131970122,
+                        "segur": -0.079791822,
+                        "deces": -0.005229676,
+                        "mi": 1.539492846,
+                        "nombr": -1.321686029,
+                        "es": 0.933611333,
+                        "llam": -0.01177536,
+                        "soy": -0.011761911,
+                        "apell": -0.0849059,
+                        "mis": -0.042196874,
+                        "son": -0.042196874,
+                        "viv": -0.011954798,
+                        "en": -0.433446795,
+                        "direccion": -2.369323015,
+                        "teng": -0.037872124,
+                        "edad": -0.037872124,
+                        "anos": -0.037872124,
+                        "dni": -2.338254213,
+                        "numer": -0.838442445,
+                        "telefon": -0.838442445,
+                        "hay": -0.381578088,
+                        "miembr": -0.381578088,
+                        "famili": -0.381578088,
+                        "el": -0.486728251,
+                        "beneficiari": -0.446320772,
+                        "fich": 8.75328064,
+                        "medic": 8.75328064,
+                        "si": -0.107271366,
+                        "la": -0.565659106,
+                        "enfermed": -0.541140199,
+                        "que": -0.053104058,
+                        "inclu": -0.053104058,
+                        "elimin": -0.05272441,
+                        "darm": -0.036129471,
+                        "baj": -0.036129471,
+                        "deseari": -0.011822365,
+                        "contrat": -0.011822365,
+                        "he": -0.092585795,
+                        "ten": -0.046775494,
+                        "accident": -0.069916405,
+                        "sufr": -0.02412381,
+                        "provoc": -0.021686494,
+                        "siniestr": -0.022669382,
+                        "estoy": -0.070366748,
+                        "localizacion": -0.028316112,
+                        "no": -0.095014356,
+                        "se": -0.042050641,
+                        "dond": -0.042050641,
+                        "necesit": -0.052963719,
+                        "nad": -0.052963719
+                      }
+                    },
+                    "enfermedadYES.askenfermedad": {
+                      "bias": 2.524729967,
+                      "weights": {
+                        "hol": -2.168542862,
+                        "quier": -0.652133644,
+                        "hac": -0.061683871,
+                        "una": -0.577257633,
+                        "poliz": -0.78526938,
+                        "de": -0.389756352,
+                        "vid": -0.111381739,
+                        "me": -1.105458856,
+                        "gustari": -0.05425651,
+                        "un": -0.960489631,
+                        "segur": -0.62098664,
+                        "deces": -0.052248944,
+                        "mi": -0.786762714,
+                        "nombr": -1.377386689,
+                        "es": -1.390300035,
+                        "llam": -0.289598167,
+                        "soy": -1.050267577,
+                        "apell": -1.341862321,
+                        "mis": -0.580257475,
+                        "son": -0.580257475,
+                        "viv": -0.58001864,
+                        "en": -1.233918667,
+                        "direccion": -0.66574204,
+                        "teng": -0.822796881,
+                        "edad": -0.822796881,
+                        "anos": -0.822796881,
+                        "dni": -0.312684,
+                        "numer": -0.023449019,
+                        "telefon": -0.023449019,
+                        "hay": -0.162819579,
+                        "miembr": -0.162819579,
+                        "famili": -0.162819579,
+                        "el": -0.800426424,
+                        "beneficiari": -0.308571845,
+                        "fich": -0.164564982,
+                        "medic": -0.164564982,
+                        "si": 16.572284698,
+                        "la": -0.66579634,
+                        "enfermed": -0.45778501,
+                        "que": -0.546128631,
+                        "inclu": -0.546128631,
+                        "elimin": -0.493820906,
+                        "darm": -0.202676624,
+                        "baj": -0.202676624,
+                        "deseari": -0.15373759,
+                        "contrat": -0.15373759,
+                        "he": -0.831356883,
+                        "ten": -0.411233395,
+                        "accident": -0.521088898,
+                        "sufr": -0.21140945,
+                        "provoc": -0.208713889,
+                        "siniestr": -0.310267568,
+                        "estoy": -0.805282831,
+                        "localizacion": -0.473084331,
+                        "no": -1.05197978,
+                        "se": -0.332198262,
+                        "dond": -0.332198262,
+                        "necesit": -0.719781637,
+                        "nad": -0.719781637
+                      }
+                    },
+                    "enfermedadYES.enfermedadRecibida": {
+                      "bias": 0.187347353,
+                      "weights": {
+                        "hol": -0.565749764,
+                        "quier": -0.099023588,
+                        "hac": -0.011097016,
+                        "una": -0.060196765,
+                        "poliz": -2.333709478,
+                        "de": -0.408398211,
+                        "vid": -0.020094497,
+                        "me": -0.156139195,
+                        "gustari": -0.021204846,
+                        "un": -0.202195659,
+                        "segur": -0.099469192,
+                        "deces": -0.005720766,
+                        "mi": -3.143441439,
+                        "nombr": -0.561420441,
+                        "es": 3.904696465,
+                        "llam": -0.031656854,
+                        "soy": -0.042423833,
+                        "apell": -0.195512235,
+                        "mis": -0.092234708,
+                        "son": -0.092234708,
+                        "viv": -0.035089303,
+                        "en": -0.141893134,
+                        "direccion": -0.943906128,
+                        "teng": -0.111182727,
+                        "edad": -0.111182727,
+                        "anos": -0.111182727,
+                        "dni": -0.931509376,
+                        "numer": -0.337737024,
+                        "telefon": -0.337737024,
+                        "hay": -0.001443886,
+                        "miembr": -0.001443886,
+                        "famili": -0.001443886,
+                        "el": -2.03925705,
+                        "beneficiari": -1.999819994,
+                        "fich": -0.476596504,
+                        "medic": -0.476596504,
+                        "si": -0.2028341,
+                        "la": 6.772999763,
+                        "enfermed": 9.046506882,
+                        "que": -2.296177626,
+                        "inclu": -2.296177626,
+                        "elimin": -0.066339873,
+                        "darm": -0.04484598,
+                        "baj": -0.04484598,
+                        "deseari": -0.016772695,
+                        "contrat": -0.016772695,
+                        "he": -0.142163992,
+                        "ten": -0.072663628,
+                        "accident": -0.10448844,
+                        "sufr": -0.036466684,
+                        "provoc": -0.033033699,
+                        "siniestr": -0.037675567,
+                        "estoy": -0.158257499,
+                        "localizacion": -0.091166042,
+                        "no": -0.170317456,
+                        "se": -0.067091458,
+                        "dond": -0.067091458,
+                        "necesit": -0.103226013,
+                        "nad": -0.103226013
+                      }
+                    },
+                    "enfermedadYES.enfermedadIncluye": {
+                      "bias": 0.430710673,
+                      "weights": {
+                        "hol": -0.433146507,
+                        "quier": -1.241091609,
+                        "hac": -0.11973235,
+                        "una": -0.810040414,
+                        "poliz": 2.486139774,
+                        "de": -1.427256465,
+                        "vid": -0.293591052,
+                        "me": -0.414947033,
+                        "gustari": -0.221820176,
+                        "un": -0.796438277,
+                        "segur": 2.525225639,
+                        "deces": -0.088746659,
+                        "mi": -0.198151514,
+                        "nombr": -0.322448432,
+                        "es": -1.903911948,
+                        "llam": -0.086126834,
+                        "soy": -0.20338662,
+                        "apell": -0.266763419,
+                        "mis": -0.159763426,
+                        "son": -0.159763426,
+                        "viv": -0.105755061,
+                        "en": -0.378032655,
+                        "direccion": -0.144215301,
+                        "teng": -0.184996173,
+                        "edad": -0.184996173,
+                        "anos": -0.184996173,
+                        "dni": -0.037943475,
+                        "numer": -0.000178781,
+                        "telefon": -0.000178781,
+                        "hay": -0.068710908,
+                        "miembr": -0.068710908,
+                        "famili": -0.068710908,
+                        "el": 2.326021194,
+                        "beneficiari": -0.852075815,
+                        "fich": -0.019923057,
+                        "medic": -0.019923057,
+                        "si": -0.423474044,
+                        "la": 2.373780251,
+                        "enfermed": -0.922396243,
+                        "que": 7.356432438,
+                        "inclu": 7.356432438,
+                        "elimin": -0.918017566,
+                        "darm": -1.044739842,
+                        "baj": -1.044739842,
+                        "deseari": -0.882182419,
+                        "contrat": -0.882182419,
+                        "he": -0.143565565,
+                        "ten": -0.073098488,
+                        "accident": -0.108622037,
+                        "sufr": -0.037227727,
+                        "provoc": -0.033239353,
+                        "siniestr": -0.034943532,
+                        "estoy": -0.22865279,
+                        "localizacion": -0.111924268,
+                        "no": -0.282083094,
+                        "se": -0.116728522,
+                        "dond": -0.116728522,
+                        "necesit": -0.165354609,
+                        "nad": -0.165354609
+                      }
+                    },
+                    "agent.eliminarSeguro": {
+                      "bias": 0.357664406,
+                      "weights": {
+                        "hol": -1.002168417,
+                        "quier": 3.524245739,
+                        "hac": -3.827976704,
+                        "una": 2.812620401,
+                        "poliz": 2.648776531,
+                        "de": -2.726477146,
+                        "vid": -6.672397137,
+                        "me": 0.729925454,
+                        "gustari": 2.187661409,
+                        "un": 1.761264086,
+                        "segur": 3.446819067,
+                        "deces": -2.944604635,
+                        "mi": -0.404237449,
+                        "nombr": -0.595969439,
+                        "es": -0.471897721,
+                        "llam": -0.496075869,
+                        "soy": -0.093216613,
+                        "apell": -1.033940434,
+                        "mis": -0.072278969,
+                        "son": -0.072278969,
+                        "viv": -0.438231945,
+                        "en": -0.201886952,
+                        "direccion": -0.459931225,
+                        "teng": -0.149163038,
+                        "edad": -0.149163038,
+                        "anos": -0.149163038,
+                        "dni": -0.023070581,
+                        "numer": -0.071463227,
+                        "telefon": -0.071463227,
+                        "hay": -0.277175218,
+                        "miembr": -0.277175218,
+                        "famili": -0.277175218,
+                        "el": 0.221963733,
+                        "beneficiari": -0.325567216,
+                        "fich": -0.004151878,
+                        "medic": -0.004151878,
+                        "si": -0.360758632,
+                        "la": -0.183111042,
+                        "enfermed": -0.019268334,
+                        "que": -2.001397371,
+                        "inclu": -2.001397371,
+                        "elimin": 10.751999855,
+                        "darm": 6.961983204,
+                        "baj": 6.961983204,
+                        "deseari": 2.385083914,
+                        "contrat": 2.385083914,
+                        "he": -1.138025641,
+                        "ten": -0.609688818,
+                        "accident": -0.776225448,
+                        "sufr": -0.274468094,
+                        "provoc": -0.253870279,
+                        "siniestr": -0.361802876,
+                        "estoy": -0.623266697,
+                        "localizacion": -0.50562793,
+                        "no": -0.304002702,
+                        "se": -0.117638931,
+                        "dond": -0.117638931,
+                        "necesit": -0.186363846,
+                        "nad": -0.186363846
+                      }
+                    },
+                    "agent.acidente": {
+                      "bias": 0.667769969,
+                      "weights": {
+                        "hol": -0.658328116,
+                        "quier": -2.419510365,
+                        "hac": -0.490161479,
+                        "una": -0.139677778,
+                        "poliz": -0.278546333,
+                        "de": -1.349361777,
+                        "vid": -0.691673756,
+                        "me": -0.407480657,
+                        "gustari": -0.051030152,
+                        "un": 5.249843121,
+                        "segur": -2.353346586,
+                        "deces": -0.449359953,
+                        "mi": -0.396628499,
+                        "nombr": -0.483805984,
+                        "es": -0.557652414,
+                        "llam": -0.153314233,
+                        "soy": -0.263628006,
+                        "apell": -0.411970437,
+                        "mis": -0.208834127,
+                        "son": -0.208834127,
+                        "viv": -0.128936693,
+                        "en": -0.577144504,
+                        "direccion": -0.21028161,
+                        "teng": -0.255694121,
+                        "edad": -0.255694121,
+                        "anos": -0.255694121,
+                        "dni": -0.08675722,
+                        "numer": -0.009770559,
+                        "telefon": -0.009770559,
+                        "hay": -0.090879969,
+                        "miembr": -0.090879969,
+                        "famili": -0.090879969,
+                        "el": -0.163948998,
+                        "beneficiari": -0.141464919,
+                        "fich": -0.061012071,
+                        "medic": -0.061012071,
+                        "si": -0.645275772,
+                        "la": -0.249307662,
+                        "enfermed": -0.11043904,
+                        "que": -0.161352694,
+                        "inclu": -0.161352694,
+                        "elimin": -1.130952716,
+                        "darm": -0.198557422,
+                        "baj": -0.198557422,
+                        "deseari": 0,
+                        "contrat": 0,
+                        "he": 7.580714703,
+                        "ten": 2.805567265,
+                        "accident": 4.039704323,
+                        "sufr": 2.39151454,
+                        "provoc": 2.3836236,
+                        "siniestr": 3.541003704,
+                        "estoy": -0.325696617,
+                        "localizacion": -0.158770472,
+                        "no": -0.397059292,
+                        "se": -0.16692616,
+                        "dond": -0.16692616,
+                        "necesit": -0.230133161,
+                        "nad": -0.230133161
+                      }
+                    },
+                    "agent.asklocalizacion": {
+                      "bias": 0.280642003,
+                      "weights": {
+                        "hol": -0.319203377,
+                        "quier": -0.817747891,
+                        "hac": -0.039481007,
+                        "una": -0.073738739,
+                        "poliz": -0.12928313,
+                        "de": -0.834281564,
+                        "vid": -0.069102772,
+                        "me": -0.22026512,
+                        "gustari": -0.022603229,
+                        "un": -0.822373748,
+                        "segur": -0.792034984,
+                        "deces": -0.022807535,
+                        "mi": -1.236641526,
+                        "nombr": -0.25773862,
+                        "es": -0.216680974,
+                        "llam": -0.08361017,
+                        "soy": -0.152436778,
+                        "apell": -0.22906287,
+                        "mis": -0.115011074,
+                        "son": -0.115011074,
+                        "viv": -2.337714434,
+                        "en": 4.462002277,
+                        "direccion": -2.352337122,
+                        "teng": -0.131103009,
+                        "edad": -0.131103009,
+                        "anos": -0.131103009,
+                        "dni": -0.021123156,
+                        "numer": -0.007977526,
+                        "telefon": -0.007977526,
+                        "hay": -1.166762471,
+                        "miembr": -1.166762471,
+                        "famili": -1.166762471,
+                        "el": -0.104695097,
+                        "beneficiari": -0.079272486,
+                        "fich": -0.004464332,
+                        "medic": -0.004464332,
+                        "si": -0.283719808,
+                        "la": -0.123073705,
+                        "enfermed": -0.067529276,
+                        "que": -0.080967002,
+                        "inclu": -0.080967002,
+                        "elimin": -0.01404701,
+                        "darm": -0.734393835,
+                        "baj": -0.734393835,
+                        "deseari": 0,
+                        "contrat": 0,
+                        "he": -0.055761348,
+                        "ten": -0.028283169,
+                        "accident": -0.042646527,
+                        "sufr": -0.014590631,
+                        "provoc": -0.012887548,
+                        "siniestr": -0.01311482,
+                        "estoy": 6.477798462,
+                        "localizacion": 8.700861931,
+                        "no": -2.280663013,
+                        "se": -2.223068953,
+                        "dond": -2.223068953,
+                        "necesit": -0.057594225,
+                        "nad": -0.057594225
+                      }
+                    },
+                    "agent.asklocalizacionNo": {
+                      "bias": 0.091100231,
+                      "weights": {
+                        "hol": -0.258736134,
+                        "quier": -0.145520583,
+                        "hac": -0.050619129,
+                        "una": -0.109082863,
+                        "poliz": -0.161297172,
+                        "de": -0.151995391,
+                        "vid": -0.084189132,
+                        "me": -0.206735387,
+                        "gustari": -0.024795257,
+                        "un": -0.207378328,
+                        "segur": -0.134050086,
+                        "deces": -0.031585984,
+                        "mi": -0.191938087,
+                        "nombr": -0.237324551,
+                        "es": -0.275342762,
+                        "llam": -0.078582056,
+                        "soy": -0.131382093,
+                        "apell": -0.209616989,
+                        "mis": -0.106258944,
+                        "son": -0.106258944,
+                        "viv": -0.046448529,
+                        "en": -2.072476864,
+                        "direccion": -0.085871249,
+                        "teng": -0.127480343,
+                        "edad": -0.127480343,
+                        "anos": -0.127480343,
+                        "dni": -0.044028465,
+                        "numer": -0.013396578,
+                        "telefon": -0.013396578,
+                        "hay": -0.037526224,
+                        "miembr": -0.037526224,
+                        "famili": -0.037526224,
+                        "el": -0.133573353,
+                        "beneficiari": -0.060756259,
+                        "fich": -0.030203702,
+                        "medic": -0.030203702,
+                        "si": -0.226690814,
+                        "la": -0.112388983,
+                        "enfermed": -0.060174637,
+                        "que": -0.103283629,
+                        "inclu": -0.103283629,
+                        "elimin": -0.053464841,
+                        "darm": -0.022823721,
+                        "baj": -0.022823721,
+                        "deseari": -0.021747839,
+                        "contrat": -0.021747839,
+                        "he": -0.146145344,
+                        "ten": -0.074299738,
+                        "accident": -0.106613345,
+                        "sufr": -0.037574962,
+                        "provoc": -0.03427064,
+                        "siniestr": -0.039532002,
+                        "estoy": 3.985606432,
+                        "localizacion": -1.987750053,
+                        "no": 3.957073689,
+                        "se": 5.973351002,
+                        "dond": 5.973351002,
+                        "necesit": -2.016293049,
+                        "nad": -2.016293049
+                      }
+                    },
+                    "agent.necesidadNO": {
+                      "bias": 0.686255455,
+                      "weights": {
+                        "hol": -0.670241892,
+                        "quier": -0.222006425,
+                        "hac": -0.061633095,
+                        "una": -0.172164425,
+                        "poliz": -0.256644815,
+                        "de": -0.198217914,
+                        "vid": -0.103178538,
+                        "me": -0.356129259,
+                        "gustari": -0.030674065,
+                        "un": -0.320819139,
+                        "segur": -0.2018805,
+                        "deces": -0.040573262,
+                        "mi": -0.292159885,
+                        "nombr": -0.441799074,
+                        "es": -0.437594384,
+                        "llam": -0.123544268,
+                        "soy": -0.285164326,
+                        "apell": -0.391320616,
+                        "mis": -0.189409584,
+                        "son": -0.189409584,
+                        "viv": -0.194675788,
+                        "en": -0.312339455,
+                        "direccion": -0.243644878,
+                        "teng": -0.247925624,
+                        "edad": -0.247925624,
+                        "anos": -0.247925624,
+                        "dni": -0.070492581,
+                        "numer": -0.016057439,
+                        "telefon": -0.016057439,
+                        "hay": -0.079223,
+                        "miembr": -0.079223,
+                        "famili": -0.079223,
+                        "el": -0.229806274,
+                        "beneficiari": -0.108441815,
+                        "fich": -0.044327382,
+                        "medic": -0.044327382,
+                        "si": -0.66095233,
+                        "la": -0.200696006,
+                        "enfermed": -0.116215654,
+                        "que": -0.168611512,
+                        "inclu": -0.168611512,
+                        "elimin": -0.107753396,
+                        "darm": -0.038408719,
+                        "baj": -0.038408719,
+                        "deseari": -0.03723333,
+                        "contrat": -0.03723333,
+                        "he": -0.240303189,
+                        "ten": -0.124229632,
+                        "accident": -0.164768979,
+                        "sufr": -0.060043059,
+                        "provoc": -0.056030523,
+                        "siniestr": -0.075534172,
+                        "estoy": -1.966232419,
+                        "localizacion": -0.037595067,
+                        "no": 5.145030975,
+                        "se": -1.928637385,
+                        "dond": -1.928637385,
+                        "necesit": 7.073673725,
+                        "nad": 7.073673725
+                      }
+                    }
+                  }
+                ],
+                "trainOpts": {
+                  "iterations": 20000,
+                  "errorThresh": 0.00005,
+                  "deltaErrorThresh": 1e-7,
+                  "learningRate": 0.4,
+                  "momentum": 0.5,
+                  "leakyReluAlpha": 0.05,
+                  "maxDecimals": 9
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "extraSentences": [
+      [
+        "es",
+        "Hola"
+      ],
+      [
+        "es",
+        "Hola, quiero hacerme una poliza de vida"
+      ],
+      [
+        "es",
+        "Me gustaria una poliza de vida"
+      ],
+      [
+        "es",
+        "Quiero una poliza de vida"
+      ],
+      [
+        "es",
+        "Quiero un seguro de vida"
+      ],
+      [
+        "es",
+        "quiero hacerme una poliza de decesos"
+      ],
+      [
+        "es",
+        "quiero hacerme un seguro de decesos"
+      ],
+      [
+        "es",
+        "Hola, mi nombre es %nombre%"
+      ],
+      [
+        "es",
+        "Me llamo %nombre%"
+      ],
+      [
+        "es",
+        "Soy %nombre%"
+      ],
+      [
+        "es",
+        "me apellido %apellidos%"
+      ],
+      [
+        "es",
+        "mis apellidos son %apellidos%"
+      ],
+      [
+        "es",
+        "Vivo en %direccion%"
+      ],
+      [
+        "es",
+        "Mi dirección es %direccion%"
+      ],
+      [
+        "es",
+        "Tengo %edad% años"
+      ],
+      [
+        "es",
+        "Mi DNI es %dni%"
+      ],
+      [
+        "es",
+        "Mi numero de telefono es %telefono%"
+      ],
+      [
+        "es",
+        "Hay %miembros% en mi familia"
+      ],
+      [
+        "es",
+        "En mi familia hay %miembros% miembros"
+      ],
+      [
+        "es",
+        "El beneficiario es %beneficiario%"
+      ],
+      [
+        "es",
+        "Mi ficha medica es %ficha%"
+      ],
+      [
+        "es",
+        "si"
+      ],
+      [
+        "es",
+        "la enfermedad es %enfermedad%"
+      ],
+      [
+        "es",
+        "¿Qué incluye la poliza?"
+      ],
+      [
+        "es",
+        "¿Qué incluye el seguro?"
+      ],
+      [
+        "es",
+        "Quiero eliminar un seguro"
+      ],
+      [
+        "es",
+        "Quiero eliminar una poliza"
+      ],
+      [
+        "es",
+        "Quiero darme de baja en un seguro"
+      ],
+      [
+        "es",
+        "Me gustaria darme de baja de una poliza"
+      ],
+      [
+        "es",
+        "Desearia darme de baja de el seguro contratado"
+      ],
+      [
+        "es",
+        "He tenido un accidente"
+      ],
+      [
+        "es",
+        "He sufrido un accidente"
+      ],
+      [
+        "es",
+        "He provocado un accidente"
+      ],
+      [
+        "es",
+        "He tenido un siniestro"
+      ],
+      [
+        "es",
+        "Estoy en %localizacion%"
+      ],
+      [
+        "es",
+        "No se donde estoy"
+      ],
+      [
+        "es",
+        "no necesito nada"
+      ]
+    ]
+  },
+  "nerManager": {
+    "settings": {},
+    "threshold": 0.8,
+    "builtins": [
+      "Number",
+      "Ordinal",
+      "Percentage",
+      "Age",
+      "Currency",
+      "Dimension",
+      "Temperature",
+      "DateTime",
+      "PhoneNumber",
+      "IpAddress",
+      "Boolean",
+      "Email",
+      "Hashtag",
+      "URL"
+    ],
+    "namedEntities": {}
+  },
+  "slotManager": {},
+  "responses": {
+    "es": {
+      "Sí %necesito%": [
+        {
+          "response": "agent.necesidadSI"
+        }
+      ],
+      "agent.hola": [
+        {
+          "response": "¡Hola!"
+        },
+        {
+          "response": "¡Hola! Bienvenido"
+        },
+        {
+          "response": "¡Hola! Sera un placer atenderte"
+        }
+      ],
+      "agent.askpolizavida": [
+        {
+          "response": "¡Hola! ¿Cómo te llamas?"
+        }
+      ],
+      "agent.asknombre": [
+        {
+          "response": "Gracias! Por favor dime tus apellidos"
+        }
+      ],
+      "agent.askapellidos": [
+        {
+          "response": "Genial, ¿Dónde vives? Por favor se lo más completo posible"
+        }
+      ],
+      "agent.askdireccion": [
+        {
+          "response": "¿Cuántos años tienes?"
+        }
+      ],
+      "agent.askedad": [
+        {
+          "response": "Introduzca su DNI por favor"
+        }
+      ],
+      "agent.askdni": [
+        {
+          "response": "¿Cuál es tu número de telefono?"
+        }
+      ],
+      "agent.asktlfn": [
+        {
+          "response": "¿Cuántos miembros hay en su familia?"
+        }
+      ],
+      "agent.askmiembros": [
+        {
+          "response": "¿Quién es el beneficiario del seguro?"
+        }
+      ],
+      "agent.askbeneficiario": [
+        {
+          "response": "Por favor introduce ficha médica."
+        }
+      ],
+      "agent.askficha": [
+        {
+          "response": "¿Hay alguna enfermedad hereditaria en su familia?"
+        }
+      ],
+      "enfermedadYES.askenfermedad": [
+        {
+          "response": "¿Qué enfermedad?"
+        }
+      ],
+      "enfermedadYES.enfermedadRecibida": [
+        {
+          "response": "¡Muchas gracias! trabajaré duro para hacerte tu poliza personalmente"
+        }
+      ],
+      "enfermedadYES.incluye": [
+        {
+          "response": "Esta póliza incluye: fallecimiento por cualquier cosa, incapacidad permanente y enfermedades graves."
+        }
+      ],
+      "agent.eliminarSeguro": [
+        {
+          "response": "¿Estás seguro? Es una lastima que te vayas"
+        }
+      ],
+      "agent.acidente": [
+        {
+          "response": "¿Sabes donde estás? Por favor indicamelo"
+        }
+      ],
+      "agent.asklocalizacion": [
+        {
+          "response": "¿Necesitas algo más?"
+        }
+      ],
+      "agent.necesidadNO": [
+        {
+          "response": "¡Vale! Si necesitas algo dimelo"
+        }
+      ],
+      "agent.necesidadSI": [
+        {
+          "response": "¡Genial! ¿Qué deseas?"
+        }
+      ],
+      "agent.buscarpoliza": [
+        {
+          "response": "Perfecto, voy a buscar tu número de poliza"
+        }
+      ],
+      "agent.enviargrua": [
+        {
+          "response": "Ya te he encontrado la poliza, enviaré una grúa y un mecanico a ayudarte"
+        }
+      ],
+      "agent.asklocalizacionNo": [
+        {
+          "response": "Tranquilo, te encontraremos"
+        }
+      ]
+    }
+  }
+}
