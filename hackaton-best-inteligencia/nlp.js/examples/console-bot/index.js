@@ -26,7 +26,7 @@ const { NlpManager } = require('../../lib');
 const trainnlp = require('./train-nlp');
 
 const threshold = 0.5;
-const nlpManager = new NlpManager({ languages: ['en'] });
+const nlpManager = new NlpManager({ languages: ['en', 'es'] });
 
 function say(message) {
   // eslint-disable-next-line no-console
