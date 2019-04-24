@@ -20,6 +20,8 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
+const { Recognizer } = require('../../lib');
+const { ActivityTypes } = require('botbuilder');
 
 const readline = require('readline');
 const { NlpManager } = require('../../lib');
@@ -27,6 +29,28 @@ const trainnlp = require('./train-nlp');
 
 const threshold = 0.5;
 const nlpManager = new NlpManager({ languages: ['en', 'es'] });
+
+
+class Mybot {
+  constructor() {
+    this.recognizer = new Recognizer();
+    this.recognizer.nlpManager.addLanguage('es');
+    trainnlp(this.recognizer.nlpManager, console.log)
+  }
+
+  async onTurn(turnContext) {
+    if (turnContext.actiivity.type === ActivityTypes.Message) {
+      try {
+        const result = await this.recognizer.recognize(turnContext);
+        await turnContext.sendActivity(result.answer);
+      } catch (ex) {
+        await turnContext.sendActivity('Opps!!');
+      }
+    }
+  }
+}
+
+module.exports = Mybot;
 
 function say(message) {
   // eslint-disable-next-line no-console
