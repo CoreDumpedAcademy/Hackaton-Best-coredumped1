@@ -1,6 +1,5 @@
 const LifePolicyUser = require('../models/lifePolicy');
 
-
 // Create and save a new user
 function signUp(req, res) {
   const { email } = req.body;
@@ -22,7 +21,6 @@ function signUp(req, res) {
     if (err) return res.status(500).send({ message: `Error finding user ${err}` });
     if (userExist) return res.status(409).send({ message: 'User already exist' });
 
-
     const lifePolicyUser = new LifePolicyUser({
       email,
       firstname,
@@ -39,7 +37,6 @@ function signUp(req, res) {
       hereditaryDiseases,
     });
 
-    console.log(lifePolicyUser);
     // Save the new user
     lifePolicyUser.save((error, newUser) => {
       if (error) return res.status(500).send({ message: `Error saving user ${error}` });
@@ -50,7 +47,6 @@ function signUp(req, res) {
     return true;
   });
 }
-
 
 // Update the user information
 function updateLifePolicyUser(req, res) {
@@ -69,7 +65,6 @@ function updateLifePolicyUser(req, res) {
   const { hereditaryDiseases } = req.body;
   const updatedFields = {};
 
-
   // Get the new information
   if (email) updatedFields.email = req.body.email;
   if (firstname) updatedFields.firstname = req.body.firstname;
@@ -85,7 +80,6 @@ function updateLifePolicyUser(req, res) {
   if (medicalLog) updatedFields.medicalLog = req.body.medicalLog;
   if (hereditaryDiseases) updatedFields.hereditaryDiseases = req.body.hereditaryDiseases;
 
-
   // Update the user
   LifePolicyUser.findOneAndUpdate(req.params.documentIdentifier, updatedFields, (err, user) => {
     if (err) return res.status(500).send({ message: `Error finding user ${err}` });
@@ -96,8 +90,8 @@ function updateLifePolicyUser(req, res) {
 }
 
 
-// Get user object by ID
-function getLifePolictUser(req, res) {
+// Get user object by documentIdentifier
+function getLifePolicyUser(req, res) {
   const { documentIdentifier } = req.params;
 
   LifePolicyUser.findOne({ documentIdentifier }, (err, user) => {
@@ -108,8 +102,21 @@ function getLifePolictUser(req, res) {
   });
 }
 
+// Delete user object by documentIdentifier
+function deleteLifePolicyUser(req, res) {
+  const { documentIdentifier } = req.params;
+
+  LifePolicyUser.findOneAndDelete({ documentIdentifier }, (err, user) => {
+    if (err) return res.status(500).send({ message: `Error on request: ${err}` });
+    if (!user) return res.status(404).send({ message: `No users found: ${err}` });
+
+    return res.status(200).send({ message: 'user erased' });
+  });
+}
+
 module.exports = {
   signUp,
   updateLifePolicyUser,
-  getLifePolictUser,
+  getLifePolicyUser,
+  deleteLifePolicyUser,
 };
