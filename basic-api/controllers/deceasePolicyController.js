@@ -26,14 +26,14 @@ function createLifeDecease(req, res, next){
 }
 
 function getLifeDecease(req, res){
-	const dni = req.body.documentIdentifier;
+	const dni = req.params.documentIdentifier;
 	LifeDecease.findOne({documentIdentifier:dni},(err, policy) => {
 		if(err){
 			res.status(500).send("Error: " + err);
 			return next(err);
 		}
 		if(policy){
-		return res.status(200).send({identifier:policy.documentIdentifier});
+		return res.status(200).send(policy);
 		}else{
 			return res.status(500).send({error:'Policy not finded'});
 		}
@@ -41,8 +41,8 @@ function getLifeDecease(req, res){
 }
 
 function updateLifeDecease(req, res){
-	const dni = req.body.documentIdentifier;
-	const newPolicy = req.body;
+	const dni = req.params.documentIdentifier;
+	const newPolicy = req.params;
 	if(dni != null){
 		LifeDecease.findOneAndUpdate({documentIdentifier: dni}, {$set:{newPolicy}}, (err) => {
 			if(err){
@@ -54,7 +54,7 @@ function updateLifeDecease(req, res){
 	}
 }
 function deleteLifeDecease(req, res, next){
-	const dni = req.body.documentIdentifier;
+	const dni = req.params.documentIdentifier;
 	if(dni != null){
 		LifeDecease.findOneAndDelete({documentIdentifier:dni}, (err) => {
 			if(err){

@@ -9,5 +9,7 @@ api.use((req, res, next) => {
 });
 
 api.post('/signup', DeceaseController.createLifeDecease);
-
+api.get('/:documentIdentifier', DeceaseController.getLifeDecease);
+api.put('/update/:documentIdentifier', DeceaseController.updateLifeDecease);
+api.delete('/:documentIdentifier', DeceaseController.deleteLifeDecease);
 module.exports = api;
