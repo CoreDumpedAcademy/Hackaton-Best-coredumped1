@@ -1,0 +1,55 @@
+{
+	"type": "AdaptiveCard",
+	"version": "1.0",
+	"body": [
+        {
+            "type": "TextBlock",
+            "text": "Vamos a conocernos mejor, por favor rellena los siguientes campos:",
+            "size": "medium",
+            "wrap": "true"
+        },
+		{
+            "type": "Input.Text",
+            "id": "input1",
+            "placeholder": "Nombre"
+        },
+        {
+            "type": "Input.Text",
+            "id": "input2",
+            "placeholder": "Apellido"
+        },
+        {
+            "type": "Input.Text",
+            "id": "input3",
+            "placeholder": "Dirección"
+        },
+        {
+            "type": "Input.Text",
+            "id": "input4",
+            "placeholder": "Edad"
+        },
+        {
+            "type": "Input.Text",
+            "id": "input5",
+            "placeholder": "DNI"
+        },
+        {
+            "type": "Input.Text",
+            "id": "input6",
+            "placeholder": "Teléfono",
+            "style": "tel"
+        },
+        {
+            "type": "Input.Text",
+            "id": "input7",
+            "placeholder": "E-mail",
+            "style": "email"
+        },
+        {
+            "type": "Input.Text",
+            "id": "input8",
+            "placeholder": "Código Postal",
+            "maxLength": "5"
+        }
+	]
+}
